@@ -1,18 +1,19 @@
 //
-//  MovieSecondCell.swift
+//  MovieTblCell.swift
 //  MainPractice
 //
-//  Created by Apple on 7/28/20.
+//  Created by Apple on 7/31/20.
 //  Copyright © 2020 NguyenDucLuu. All rights reserved.
 //
 
 import UIKit
 
-class MovieSecondCell: UICollectionViewCell {
+class MovieTblCell: UITableViewCell {
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDecription: UILabel!
     @IBOutlet weak var imgMovie: UIImageView!
+    @IBOutlet weak var viewLine: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,14 +24,14 @@ class MovieSecondCell: UICollectionViewCell {
         imgMovie.image = UIImage(named: "img_image")
         imgMovie.contentMode = .scaleAspectFit
         imgMovie.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
-        self.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
-        self.backgroundColor = .white
-        self.layer.shadowColor = UIColor.gray.cgColor
-        self.layer.shadowOffset = CGSize(width: 3,height: 3)
-        self.layer.shadowOpacity = 0.5
-        self.layer.shadowRadius = 1
-        self.clipsToBounds = false
-        self.layer.masksToBounds = false
+//        self.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
+//        self.backgroundColor = .white
+//        self.layer.shadowColor = UIColor.gray.cgColor
+//        self.layer.shadowOffset = CGSize(width: 3,height: 3)
+//        self.layer.shadowOpacity = 0.5
+//        self.layer.shadowRadius = 1
+//        self.clipsToBounds = false
+//        self.layer.masksToBounds = false
     }
     
     override func prepareForReuse() {
@@ -38,10 +39,10 @@ class MovieSecondCell: UICollectionViewCell {
         self.imgMovie.image = nil
     }
     
-    func configCell(movie: Movie) {
+    func configCell(movie: Movie, isLast: Bool = false) {
         lblTitle.text = movie.originalTitle ?? "No title"
         lblDecription.text = movie.overview ?? "No decription"
-        
+        viewLine.isHidden = isLast
         let queue = DispatchQueue(label: "loadImage",qos: .background)
         queue.async {
             if let pathURL: String = movie.posterPath {

@@ -79,7 +79,7 @@ class MovieSecondVC: UIViewController, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (UIScreen.main.bounds.size.width - (CGFloat(col + 1) * CGFloat(spacing))) / 1
-        let size  = CGSize(width: width, height: deviceWidth / 1.41)
+        let size  = CGSize(width: width, height: deviceWidth / 1.4)
         return size
     }
 }

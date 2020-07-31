@@ -10,6 +10,8 @@ import UIKit
 
 class MovieCell: UICollectionViewCell {
     
+    @IBOutlet weak var viewAverage: UIView!
+    @IBOutlet weak var lblAverage: UILabel!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDecription: UILabel!
     @IBOutlet weak var imgMovie: UIImageView!
@@ -23,15 +25,17 @@ class MovieCell: UICollectionViewCell {
         imgMovie.image = UIImage(named: "img_image")
         imgMovie.contentMode = .scaleAspectFill
         imgMovie.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
-        self.backgroundColor = .lightGray
+        self.backgroundColor = .white
         self.alpha = 0.1
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 3,height: 3)
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0,height: 0)
         self.layer.shadowOpacity = 0.5
         self.layer.shadowRadius = 1
         self.clipsToBounds = false
         self.layer.masksToBounds = false
         self.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
+        
+        self.viewAverage.layer.cornerRadius = self.viewAverage.layer.frame.width/2
     }
     
     override func prepareForReuse() {
@@ -40,6 +44,9 @@ class MovieCell: UICollectionViewCell {
     }
     
     func configCell(movie: Movie) {
+        
+        lblAverage.text = String(movie.voteAverage!) ?? "0"
+        
         lblTitle.text = movie.originalTitle ?? "No title"
         lblDecription.text = movie.overview ?? "No decription"
         

@@ -31,6 +31,18 @@
 		188FEE0A24D2672000495D5C /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE0824D2672000495D5C /* TabVC.swift */; };
 		188FEE0B24D2672000495D5C /* TabVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE0924D2672000495D5C /* TabVC.xib */; };
 		188FEE0E24D26CC100495D5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE0D24D26CC100495D5C /* Constants.swift */; };
+		188FEE1124D3B80300495D5C /* MovieThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE0F24D3B80300495D5C /* MovieThirdVC.swift */; };
+		188FEE1224D3B80300495D5C /* MovieThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE1024D3B80300495D5C /* MovieThirdVC.xib */; };
+		188FEE1524D3BA3B00495D5C /* MovieThirdOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE1324D3BA3B00495D5C /* MovieThirdOneCell.swift */; };
+		188FEE1624D3BA3B00495D5C /* MovieThirdOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE1424D3BA3B00495D5C /* MovieThirdOneCell.xib */; };
+		188FEE1924D3C95B00495D5C /* MovieThirdTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE1724D3C95B00495D5C /* MovieThirdTwoCell.swift */; };
+		188FEE1A24D3C95B00495D5C /* MovieThirdTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE1824D3C95B00495D5C /* MovieThirdTwoCell.xib */; };
+		188FEE1D24D3F87D00495D5C /* MovieFourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE1B24D3F87D00495D5C /* MovieFourthVC.swift */; };
+		188FEE1E24D3F87D00495D5C /* MovieFourthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE1C24D3F87D00495D5C /* MovieFourthVC.xib */; };
+		188FEE2124D3FB3400495D5C /* MovieTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE1F24D3FB3400495D5C /* MovieTblCell.swift */; };
+		188FEE2224D3FB3400495D5C /* MovieTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE2024D3FB3400495D5C /* MovieTblCell.xib */; };
+		188FEE2524D414FA00495D5C /* MovieFifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE2324D414FA00495D5C /* MovieFifthVC.swift */; };
+		188FEE2624D414FA00495D5C /* MovieFifthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE2424D414FA00495D5C /* MovieFifthVC.xib */; };
 		18EC04E624C47D9A00533529 /* ImageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC04E424C47D9A00533529 /* ImageDetailVC.swift */; };
 		18EC04E724C47D9B00533529 /* ImageDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EC04E524C47D9A00533529 /* ImageDetailVC.xib */; };
 		18FC309224C69170001A9322 /* ToDoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC309024C69170001A9322 /* ToDoListVC.swift */; };
@@ -69,6 +81,18 @@
 		188FEE0824D2672000495D5C /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
 		188FEE0924D2672000495D5C /* TabVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabVC.xib; sourceTree = "<group>"; };
 		188FEE0D24D26CC100495D5C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		188FEE0F24D3B80300495D5C /* MovieThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThirdVC.swift; sourceTree = "<group>"; };
+		188FEE1024D3B80300495D5C /* MovieThirdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieThirdVC.xib; sourceTree = "<group>"; };
+		188FEE1324D3BA3B00495D5C /* MovieThirdOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThirdOneCell.swift; sourceTree = "<group>"; };
+		188FEE1424D3BA3B00495D5C /* MovieThirdOneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieThirdOneCell.xib; sourceTree = "<group>"; };
+		188FEE1724D3C95B00495D5C /* MovieThirdTwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThirdTwoCell.swift; sourceTree = "<group>"; };
+		188FEE1824D3C95B00495D5C /* MovieThirdTwoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieThirdTwoCell.xib; sourceTree = "<group>"; };
+		188FEE1B24D3F87D00495D5C /* MovieFourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFourthVC.swift; sourceTree = "<group>"; };
+		188FEE1C24D3F87D00495D5C /* MovieFourthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieFourthVC.xib; sourceTree = "<group>"; };
+		188FEE1F24D3FB3400495D5C /* MovieTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTblCell.swift; sourceTree = "<group>"; };
+		188FEE2024D3FB3400495D5C /* MovieTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTblCell.xib; sourceTree = "<group>"; };
+		188FEE2324D414FA00495D5C /* MovieFifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFifthVC.swift; sourceTree = "<group>"; };
+		188FEE2424D414FA00495D5C /* MovieFifthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieFifthVC.xib; sourceTree = "<group>"; };
 		18EC04E424C47D9A00533529 /* ImageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailVC.swift; sourceTree = "<group>"; };
 		18EC04E524C47D9A00533529 /* ImageDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailVC.xib; sourceTree = "<group>"; };
 		18FC309024C69170001A9322 /* ToDoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListVC.swift; sourceTree = "<group>"; };
@@ -152,7 +176,13 @@
 			children = (
 				188FEDEB24CFC77F00495D5C /* Cell */,
 				18FC30CA24CE7309001A9322 /* MovieVC.swift */,
+				188FEE0F24D3B80300495D5C /* MovieThirdVC.swift */,
+				188FEE1B24D3F87D00495D5C /* MovieFourthVC.swift */,
+				188FEE1C24D3F87D00495D5C /* MovieFourthVC.xib */,
+				188FEE1024D3B80300495D5C /* MovieThirdVC.xib */,
 				188FEDEC24CFE02400495D5C /* MovieSecondVC.swift */,
+				188FEE2324D414FA00495D5C /* MovieFifthVC.swift */,
+				188FEE2424D414FA00495D5C /* MovieFifthVC.xib */,
 				188FEDED24CFE02400495D5C /* MovieSecondVC.xib */,
 				18FC30CB24CE7309001A9322 /* MovieVC.xib */,
 			);
@@ -162,8 +192,14 @@
 		188FEDEB24CFC77F00495D5C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				188FEE1324D3BA3B00495D5C /* MovieThirdOneCell.swift */,
+				188FEE1424D3BA3B00495D5C /* MovieThirdOneCell.xib */,
 				1810C44924CE7B6200FA81C0 /* MovieCell.xib */,
 				1810C44E24CE854200FA81C0 /* MovieCell.swift */,
+				188FEE1F24D3FB3400495D5C /* MovieTblCell.swift */,
+				188FEE2024D3FB3400495D5C /* MovieTblCell.xib */,
+				188FEE1724D3C95B00495D5C /* MovieThirdTwoCell.swift */,
+				188FEE1824D3C95B00495D5C /* MovieThirdTwoCell.xib */,
 				188FEDF024D0061800495D5C /* MovieSecondCell.swift */,
 				188FEDF124D0061800495D5C /* MovieSecondCell.xib */,
 			);
@@ -304,17 +340,23 @@
 			files = (
 				186A74D124BFE97B00982C54 /* LaunchScreen.storyboard in Resources */,
 				18EC04E724C47D9B00533529 /* ImageDetailVC.xib in Resources */,
+				188FEE1A24D3C95B00495D5C /* MovieThirdTwoCell.xib in Resources */,
+				188FEE1224D3B80300495D5C /* MovieThirdVC.xib in Resources */,
 				18FC309324C69170001A9322 /* ToDoListVC.xib in Resources */,
 				18FC30CD24CE7309001A9322 /* MovieVC.xib in Resources */,
 				18FC309724C6924C001A9322 /* ToDoListCell.xib in Resources */,
+				188FEE2624D414FA00495D5C /* MovieFifthVC.xib in Resources */,
 				186A74E824BFF00300982C54 /* FirstVC.xib in Resources */,
 				1810C44B24CE7B6200FA81C0 /* MovieCell.xib in Resources */,
 				186A74CE24BFE97B00982C54 /* Assets.xcassets in Resources */,
 				188FEDF324D0061800495D5C /* MovieSecondCell.xib in Resources */,
 				186A74F324C1470000982C54 /* PhotoVC.xib in Resources */,
 				186A74EC24BFFD5F00982C54 /* UserInfoVC.xib in Resources */,
+				188FEE1E24D3F87D00495D5C /* MovieFourthVC.xib in Resources */,
 				186A74F924C16BFC00982C54 /* PhotoCell.xib in Resources */,
+				188FEE2224D3FB3400495D5C /* MovieTblCell.xib in Resources */,
 				188FEE0B24D2672000495D5C /* TabVC.xib in Resources */,
+				188FEE1624D3BA3B00495D5C /* MovieThirdOneCell.xib in Resources */,
 				188FEDEF24CFE02400495D5C /* MovieSecondVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,15 +369,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1810C44F24CE854200FA81C0 /* MovieCell.swift in Sources */,
+				188FEE1124D3B80300495D5C /* MovieThirdVC.swift in Sources */,
 				188FEE0E24D26CC100495D5C /* Constants.swift in Sources */,
 				1810C44D24CE7FF200FA81C0 /* Movie.swift in Sources */,
+				188FEE1524D3BA3B00495D5C /* MovieThirdOneCell.swift in Sources */,
 				186A74F824C16BFC00982C54 /* PhotoCell.swift in Sources */,
 				188FEDEE24CFE02400495D5C /* MovieSecondVC.swift in Sources */,
+				188FEE1924D3C95B00495D5C /* MovieThirdTwoCell.swift in Sources */,
 				186A74E724BFF00300982C54 /* FirstVC.swift in Sources */,
 				186A74EF24C141A800982C54 /* User.swift in Sources */,
 				18FC309624C6924C001A9322 /* ToDoListCell.swift in Sources */,
 				18FC309924C693D8001A9322 /* Task.swift in Sources */,
 				188FEE0A24D2672000495D5C /* TabVC.swift in Sources */,
+				188FEE2524D414FA00495D5C /* MovieFifthVC.swift in Sources */,
 				186A74C524BFE97A00982C54 /* AppDelegate.swift in Sources */,
 				186A74C724BFE97A00982C54 /* SceneDelegate.swift in Sources */,
 				1810C45224CE91FF00FA81C0 /* ServerPath.swift in Sources */,
@@ -345,6 +391,8 @@
 				18FC30CC24CE7309001A9322 /* MovieVC.swift in Sources */,
 				186A74EB24BFFD5F00982C54 /* UserInfoVC.swift in Sources */,
 				186A74F224C1470000982C54 /* PhotoVC.swift in Sources */,
+				188FEE1D24D3F87D00495D5C /* MovieFourthVC.swift in Sources */,
+				188FEE2124D3FB3400495D5C /* MovieTblCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,16 +20,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="372" height="418.5"/>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VCw-ol-utE">
-                        <rect key="frame" x="16" y="426.5" width="356" height="131.5"/>
+                        <rect key="frame" x="16" y="443.5" width="356" height="114.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unu-ed-UlU">
-                                <rect key="frame" x="0.0" y="0.0" width="356" height="26.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="356" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAp-um-I9I">
-                                <rect key="frame" x="0.0" y="26.5" width="356" height="105"/>
+                                <rect key="frame" x="0.0" y="23" width="356" height="91.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,12 +39,34 @@
                             <constraint firstItem="unu-ed-UlU" firstAttribute="height" secondItem="VCw-ol-utE" secondAttribute="height" multiplier="2/10" id="3xC-p8-G2C"/>
                         </constraints>
                     </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pvg-0f-JGd">
+                        <rect key="frame" x="317" y="398.5" width="45" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sm-Wu-KdL">
+                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.6187909653" green="1" blue="0.96704430320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7693973183631897" green="0.33271970356407499" blue="0.71419601006784683" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="6dg-FI-7ey"/>
+                            <constraint firstAttribute="width" secondItem="Pvg-0f-JGd" secondAttribute="height" multiplier="1:1" id="8bz-US-gWy"/>
+                            <constraint firstItem="9sm-Wu-KdL" firstAttribute="top" secondItem="Pvg-0f-JGd" secondAttribute="top" id="UEg-Ex-8YR"/>
+                            <constraint firstItem="9sm-Wu-KdL" firstAttribute="leading" secondItem="Pvg-0f-JGd" secondAttribute="leading" id="XT0-i4-3Oq"/>
+                            <constraint firstAttribute="bottom" secondItem="9sm-Wu-KdL" secondAttribute="bottom" id="bXR-ws-Iv4"/>
+                            <constraint firstAttribute="trailing" secondItem="9sm-Wu-KdL" secondAttribute="trailing" id="nZX-HE-x6K"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="VCw-ol-utE" firstAttribute="top" secondItem="gx1-Md-exL" secondAttribute="bottom" constant="8" id="8tH-cX-BsD"/>
+                <constraint firstItem="VCw-ol-utE" firstAttribute="top" secondItem="Pvg-0f-JGd" secondAttribute="bottom" id="8tH-cX-BsD"/>
+                <constraint firstItem="gx1-Md-exL" firstAttribute="bottom" secondItem="Pvg-0f-JGd" secondAttribute="bottom" constant="-25" id="ALB-xC-HhI"/>
                 <constraint firstItem="gx1-Md-exL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Few-sQ-wkT"/>
                 <constraint firstItem="gx1-Md-exL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S2z-Ze-QiZ"/>
+                <constraint firstAttribute="trailing" secondItem="Pvg-0f-JGd" secondAttribute="trailing" constant="10" id="Yao-YM-lZC"/>
                 <constraint firstItem="VCw-ol-utE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="cSa-XD-4VX"/>
                 <constraint firstItem="gx1-Md-exL" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.75" id="d3P-qe-ft9"/>
                 <constraint firstAttribute="bottom" secondItem="VCw-ol-utE" secondAttribute="bottom" id="fkv-ps-rhH"/>
@@ -55,8 +77,10 @@
             <size key="customSize" width="372" height="558"/>
             <connections>
                 <outlet property="imgMovie" destination="gx1-Md-exL" id="ycH-XT-vPv"/>
+                <outlet property="lblAverage" destination="9sm-Wu-KdL" id="7xy-zj-fXL"/>
                 <outlet property="lblDecription" destination="OAp-um-I9I" id="VQs-z5-5fo"/>
                 <outlet property="lblTitle" destination="unu-ed-UlU" id="NRk-3l-LYz"/>
+                <outlet property="viewAverage" destination="Pvg-0f-JGd" id="3LA-GO-85B"/>
             </connections>
             <point key="canvasLocation" x="-157" y="-362"/>
         </collectionViewCell>
