@@ -43,20 +43,20 @@ class MovieThirdOneCell: UICollectionViewCell {
             lblDecription.text = movie.overview ?? "No decription"
             
             let queue = DispatchQueue(label: "loadImage",qos: .background)
-            queue.async {
+            queue.async { [weak self] in
                 if let pathURL: String = movie.posterPath {
                     let url = URL(string: ServerPath.IMAGE_URL.rawValue + pathURL)
                     do {
                         let data = try Data(contentsOf: url!)
                         DispatchQueue.main.async {
-                            self.imgMovie.image = UIImage(data: data)
+                            self?.imgMovie.image = UIImage(data: data)
                         }
                     } catch {
                         
                     }
                 } else {
                     DispatchQueue.main.async {
-                        self.imgMovie.image = UIImage(named: "img_image")
+                        self?.imgMovie.image = UIImage(named: "img_image")
                     }
                 }
             }

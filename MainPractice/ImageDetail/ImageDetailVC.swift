@@ -24,16 +24,17 @@ class ImageDetailVC: UIViewController,UIScrollViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let rightBarButton = UIBarButtonItem(title: "Choose", style: .done, target: self, action: #selector(choose))
         self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
-    @objc func choose(){
+    @objc func choose() {
         delegate?.passingImage(image: image!)
         navigationController?.popToRootViewController(animated: true)
     }
     
-    func setUpView(){
+    func setUpView() {
         
         tabBarheight = navigationController!.navigationBar.frame.height
         scrollView.delegate = self
@@ -70,7 +71,7 @@ class ImageDetailVC: UIViewController,UIScrollViewDelegate {
         imageView.image = image!
     }
     
-    @objc func doubleTapImage(recognizer: UITapGestureRecognizer){
+    @objc func doubleTapImage(recognizer: UITapGestureRecognizer) {
         //        print(scrollView.zoomScale)
         if (scrollView.zoomScale > scrollView.minimumZoomScale) {
             scrollView.setZoomScale(scrollView.minimumZoomScale, animated: true)
@@ -94,24 +95,24 @@ class ImageDetailVC: UIViewController,UIScrollViewDelegate {
         return self.imageView
     }
     
-    func scrollViewDidZoom(_ scrollView: UIScrollView) {
-        if scrollView.zoomScale > 1 {
-            if let image = imageView.image {
-                
-                let ratioH  = imageView.frame.height / image.size.height
-                let ratioW  = imageView.frame.width / image.size.width
-                
-                let ratio = ratioW < ratioH ?ratioW:ratioH
-                let newWidth = image.size.width * ratio
-                let newHeight = image.size.height * ratio
-                let conditionLeft = newWidth*scrollView.zoomScale > imageView.frame.width
-                let left = 0.5 * (conditionLeft ? newWidth - imageView.frame.width : (scrollView.frame.width - scrollView.contentSize.width))
-                let conditionTop = newHeight * scrollView.zoomScale>imageView.frame.height
-                let top = 0.5 * (conditionTop ? newHeight - imageView.frame.height:(scrollView.frame.height - scrollView.contentSize.height))
-                scrollView.contentInset = UIEdgeInsets(top: top, left: left, bottom: top, right: left)
-            }
-        } else{
-            scrollView.contentInset = .zero
-        }
-    }
+//    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+//        if scrollView.zoomScale > 1 {
+//            if let image = imageView.image {
+//                
+//                let ratioH  = imageView.frame.height / image.size.height
+//                let ratioW  = imageView.frame.width / image.size.width
+//                
+//                let ratio = ratioW < ratioH ?ratioW:ratioH
+//                let newWidth = image.size.width * ratio
+//                let newHeight = image.size.height * ratio
+//                let conditionLeft = newWidth*scrollView.zoomScale > imageView.frame.width
+//                let left = 0.5 * (conditionLeft ? newWidth - imageView.frame.width : (scrollView.frame.width - scrollView.contentSize.width))
+//                let conditionTop = newHeight * scrollView.zoomScale>imageView.frame.height
+//                let top = 0.5 * (conditionTop ? newHeight - imageView.frame.height:(scrollView.frame.height - scrollView.contentSize.height))
+//                scrollView.contentInset = UIEdgeInsets(top: top, left: left, bottom: top, right: left)
+//            }
+//        } else{
+//            scrollView.contentInset = .zero
+//        }
+//    }
 }

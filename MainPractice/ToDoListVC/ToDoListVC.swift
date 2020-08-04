@@ -135,6 +135,6 @@ extension ToDoListVC: ToDoListCellDelegate {
             return
         }
         dataTask[indexPath.row].isComplete = !dataTask[indexPath.row].isComplete!
-        tblTask.reloadData()
+        tblTask.reloadRows(at: [indexPath], with: .automatic)
     }
 }

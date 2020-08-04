@@ -45,7 +45,6 @@ struct Movie: Codable {
 struct dates: Codable {
     var maximum: String?
     var minimum: String?
-    
     enum CodingKeys: String, CodingKey {
         case maximum
         case minimum
@@ -58,7 +57,6 @@ struct DataMovie: Codable {
     var totalResults: Int?
     var totalPages: Int?
     var dates: dates?
-    
     enum CodingKeys: String, CodingKey {
         case results
         case page

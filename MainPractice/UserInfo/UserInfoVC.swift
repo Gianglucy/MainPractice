@@ -14,17 +14,19 @@ class UserInfoVC: UIViewController {
     @IBOutlet weak var lblAge: UILabel!
     @IBOutlet weak var lblAddress: UILabel!
     @IBOutlet weak var imgUser: UIImageView!
-    var user:User?
+    var user: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(user!)
-        lblName.text = user!.name
-        lblAge.text = user!.age
-        lblAddress.text = user!.address
-        imgUser.image = user!.imageData as? UIImage
-        imgUser.contentMode = .scaleAspectFill
-        imgUser.layer.cornerRadius = imgUser.layer.frame.width/2
+        if let user = user {
+            print(user)
+            lblName.text = user.name
+            lblAge.text = user.age
+            lblAddress.text = user.address
+            imgUser.image = user.imageData as? UIImage
+            imgUser.contentMode = .scaleAspectFill
+            imgUser.layer.cornerRadius = imgUser.layer.frame.width/2
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

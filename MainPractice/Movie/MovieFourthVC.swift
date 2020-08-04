@@ -10,7 +10,7 @@ import UIKit
 
 class MovieFourthVC: UIViewController {
     
-    var data:[Movie] = []
+    var data:[Movie]?
     
     @IBOutlet weak var tblMovie: UITableView!
     override func viewDidLoad() {
@@ -31,7 +31,8 @@ class MovieFourthVC: UIViewController {
                     return
             }
             let movieData = try? JSONDecoder().decode(DataMovie.self, from: data)
-            self.data = movieData?.results as! [Movie]
+            guard let result = movieData?.results else { return }
+            self.data = result
             DispatchQueue.main.async {
                 self.tblMovie.reloadData()
             }
@@ -49,11 +50,12 @@ class MovieFourthVC: UIViewController {
 
 extension MovieFourthVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return data?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tblMovie.dequeueReusableCell(withIdentifier: "MovieTblCell", for: indexPath) as! MovieTblCell
+        guard let data = self.data else { return cell }
         if indexPath.row == data.count - 1 {
             cell.configCell(movie: data[indexPath.row], isLast: true)
         } else {

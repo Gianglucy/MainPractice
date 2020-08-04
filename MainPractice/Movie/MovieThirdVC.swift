@@ -36,7 +36,8 @@ class MovieThirdVC: UIViewController, UICollectionViewDelegateFlowLayout {
                     return
             }
             let movieData = try? JSONDecoder().decode(DataMovie.self, from: data)
-            self.data = movieData?.results as! [Movie]
+            guard let results = movieData?.results else { return }
+            self.data = results
             DispatchQueue.main.async {
                 self.clvMovieThirdOne.reloadData()
                 self.clvMovieThirdTwo.reloadData()
@@ -85,6 +86,7 @@ class MovieThirdVC: UIViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        //        width = (widthDevice - (numCol + 1) * spacing))) / numCol
         let width = (UIScreen.main.bounds.size.width - (CGFloat(col + 1) * CGFloat(spacing))) / 1
         let size  = CGSize(width: width, height: deviceWidth / 1.4)
         return size

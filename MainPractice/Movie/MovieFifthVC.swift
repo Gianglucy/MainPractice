@@ -24,7 +24,7 @@ class MovieFifthVC: UIViewController {
         setupUI()
     }
     
-    @IBAction func `switch`(_ sender: UISegmentedControl) {
+    @IBAction func switchUI (_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             setLayoutForCollectionView(isGrid: true)
 //            isGrid = true
@@ -76,7 +76,7 @@ class MovieFifthVC: UIViewController {
         layout.minimumLineSpacing = spacing
         
         layout.itemSize.width = (UIScreen.main.bounds.size.width - (CGFloat(col + 1) * CGFloat(spacing))) / 2
-        layout.itemSize.height = deviceHeight / 1.5
+        layout.itemSize.height = deviceHeight / 2.5
         
         clvMovieFifth!.collectionViewLayout = layout
     }
@@ -115,7 +115,7 @@ extension MovieFifthVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             layout.minimumLineSpacing = spacing
             
             layout.itemSize.width = (UIScreen.main.bounds.size.width - (CGFloat(col + 1) * CGFloat(spacing))) / 2
-            layout.itemSize.height = deviceHeight / 1.5
+            layout.itemSize.height = deviceHeight / 2.5
             
             clvMovieFifth!.collectionViewLayout = layout
         } else {
@@ -124,7 +124,7 @@ extension MovieFifthVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             layoutOy.minimumInteritemSpacing = 0
             layoutOy.minimumLineSpacing = spacing
             
-            layoutOy.itemSize.width = (UIScreen.main.bounds.size.width - (CGFloat(col + 1) * CGFloat(spacing))) / 1
+            layoutOy.itemSize.width = (UIScreen.main.bounds.size.width - (CGFloat(1 + 1) * CGFloat(spacing))) / 1
             layoutOy.itemSize.height = deviceWidth / 1.4
             
             clvMovieFifth.alwaysBounceHorizontal = false

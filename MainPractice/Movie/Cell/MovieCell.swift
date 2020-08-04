@@ -45,7 +45,7 @@ class MovieCell: UICollectionViewCell {
     
     func configCell(movie: Movie) {
         
-        lblAverage.text = String(movie.voteAverage!) ?? "0"
+        lblAverage.text = String(movie.voteAverage ?? 0)
         
         lblTitle.text = movie.originalTitle ?? "No title"
         lblDecription.text = movie.overview ?? "No decription"

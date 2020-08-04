@@ -25,7 +25,7 @@
                         <segment title="List"/>
                     </segments>
                     <connections>
-                        <action selector="switch:" destination="-1" eventType="valueChanged" id="RwN-bd-6h8"/>
+                        <action selector="switchUI:" destination="-1" eventType="valueChanged" id="siQ-oe-w3f"/>
                     </connections>
                 </segmentedControl>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Cfk-AK-2xU">

@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
 //        let first = FirstVC(nibName: "FirstVC", bundle: nil)
 //        let toDoList = ToDoListVC(nibName: "ToDoListVC", bundle: nil)
-        let movie = MovieVC(nibName: "MovieVC", bundle: nil)
+//        let movie = MovieVC(nibName: "MovieVC", bundle: nil)
         let tab = TabVC(nibName: "TabVC", bundle: nil)
 //        let navigate = UINavigationController(rootViewController: tab)
         window?.rootViewController = tab

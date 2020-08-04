@@ -35,7 +35,8 @@ class MovieSecondVC: UIViewController, UICollectionViewDelegateFlowLayout {
                     return
             }
             let movieData = try? JSONDecoder().decode(DataMovie.self, from: data)
-            self.data = movieData?.results as! [Movie]
+            guard let results = movieData?.results else { return }
+            self.data = results
             DispatchQueue.main.async {
                 self.clvMovieSecond.reloadData()
             }
