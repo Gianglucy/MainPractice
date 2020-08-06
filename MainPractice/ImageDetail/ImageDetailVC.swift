@@ -8,18 +8,17 @@
 
 import UIKit
 
-class ImageDetailVC: UIViewController,UIScrollViewDelegate {
+class ImageDetailVC: UIViewController ,UIScrollViewDelegate {
     
-    var image:UIImage?
+    var image: UIImage?
     var scrollView = UIScrollView()
     var imageView = UIImageView()
-    var deviceHeight:CGFloat = 0
-    var tabBarheight:CGFloat = 0
-    var delegate:DataDelegate?
+    var deviceHeight: CGFloat = 0
+    var tabBarheight: CGFloat = 0
+    var delegate: PhotoVCDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print("inbox: \(image)")
         setUpView()
     }
     

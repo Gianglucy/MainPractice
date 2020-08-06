@@ -3,12 +3,23 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "AlbumVC.tableView(_:cellForRowAt:):AlbumVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "getUIImage(asset: imageAssets[indexPath.row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "UserInfoVC.viewDidLoad():UserInfoVC.swift">
          <PersistentStrings>
             <PersistentString
                value = "image">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TestVC.showSuccessView(_:):TestVC.swift">
       </ContextState>
       <ContextState
          contextName = "MovieSecondCell.setupUI():MovieSecondCell.swift">

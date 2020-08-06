@@ -9,35 +9,31 @@
 import UIKit
 import Photos
 
-protocol DataDelegate { //PhotoVCDelegate
+protocol PhotoVCDelegate { //PhotoVCDelegate
     func passingImage(image:UIImage)
 }
 
-class PhotoVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, DataDelegate {
+class PhotoVC: UIViewController, PhotoVCDelegate {
     
     @IBOutlet weak var myCV: UICollectionView!
-    var deviceWidth:CGFloat!
-    var deviceHeight:CGFloat!
-    var spacing:CGFloat = 3
-    var results: PHFetchResult<PHAsset>!
-    var array = [UIImage]()
-    var delegate:DataDelegate?
-    var imageChosen:UIImage?
-    var width:CGFloat!
-    var height:CGFloat!
+    var deviceWidth: CGFloat!
+    var deviceHeight: CGFloat!
+    var spacing: CGFloat = 3
+    var delegate: PhotoVCDelegate?
+    var imageChosen: UIImage?
+    var width: CGFloat!
+    var height: CGFloat!
+    
+    var image = [UIImage]()
+    var imageAssets = [PHAsset]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getPhotos()
+        getAsset()
         setupUI()
     }
     
     func setupUI() {
-        
-        //        let rightBarButton = UIBarButtonItem(title: "Choose", style: .done, target: self, action: #selector(choose))
-        //
-        //        self.navigationItem.rightBarButtonItem = rightBarButton
-        
         myCV.delegate = self
         myCV.dataSource = self
         
@@ -48,34 +44,48 @@ class PhotoVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         height = (deviceWidth - 3 * spacing) / 3
         
         myCV.register(UINib(nibName: "PhotoCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCell")
-        
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: spacing, bottom: spacing, right: spacing)
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = spacing
-        myCV!.collectionViewLayout = layout
     }
-    
-    //    @objc func choose() {
-    //        if imageChosen != nil {
-    //            delegate?.passingImage(image: imageChosen!)
-    //        }
-    //        navigationController?.popToRootViewController(animated: true)
-    //    }
     
     func passingImage(image: UIImage) {
         delegate?.passingImage(image: imageChosen!)
     }
     
+    func getUIImage(asset: PHAsset) -> UIImage? {
+        var img: UIImage?
+        let manager = PHImageManager.default()
+        let options = PHImageRequestOptions()
+        options.version = .original
+        options.isSynchronous = true
+        manager.requestImage(for: asset, targetSize: CGSize(width: 200.0, height: 200.0), contentMode: .aspectFit, options: nil, resultHandler: {(result, info)->Void in
+            guard let imgresult = result else{
+                return
+            }
+            img = imgresult
+        })
+        return img
+    }
+    
+    func getAsset() {
+        DispatchQueue.global(qos: .background).async {
+            let imageAsset = PHAsset.fetchAssets(with: .image, options: nil)
+            for index in 0..<imageAsset.count{
+                self.imageAssets.append(imageAsset[index])
+                DispatchQueue.main.async {
+                    self.myCV.reloadData()
+                }
+            }
+        }
+    }
+}
+
+extension PhotoVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return array.count
+        return imageAssets.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myCV.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
-        let asset = self.results!.object(at: indexPath.row)
-        PHCachingImageManager.default().requestImage(for: asset, targetSize:  CGSize(width: width, height: height), contentMode: .aspectFill, options: nil){ (image,_) in cell.configWithImage(image)
-        }
+        cell.configWithImage(imageAsset: self.imageAssets[indexPath.row])
         return cell
     }
     
@@ -84,59 +94,23 @@ class PhotoVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         return size
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return spacing
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
-        imageChosen = array[indexPath.row]
+        imageChosen = getUIImage(asset: imageAssets[indexPath.row])
         let imageDetailVC = ImageDetailVC()
         imageDetailVC.delegate = self
         imageDetailVC.image = imageChosen
         navigationController?.pushViewController(imageDetailVC, animated: true)
-    }
-    
-    func getPhotos() {
-        DispatchQueue.global(qos: .background).async {
-            let manager = PHImageManager.default()
-            let requestOptions = PHImageRequestOptions()
-            requestOptions.isSynchronous = false
-            requestOptions.deliveryMode = .highQualityFormat
-            // .highQualityFormat will return better quality photos
-            let fetchOptions = PHFetchOptions()
-            fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-            
-            self.results = PHAsset.fetchAssets(with: .image, options: fetchOptions)
-            if self.results.count > 0 {
-                for i in 0..<self.results.count {
-                    let asset = self.results.object(at: i)
-                    let size = CGSize(width: 700, height: 700)
-                    manager.requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: requestOptions) { (image, _) in
-                        if let image = image {
-                            self.array.append(image)
-                            self.myCV.reloadData()
-                        } else {
-                            print("error asset to image")
-                        }
-                    }
-                }
-            } else {
-                print("no photos to display")
-            }
-        }
-    }
-}
-
-extension UIImageView{
-    func fetchImage(asset: PHAsset, contentMode: PHImageContentMode, targetSize: CGSize) {
-        let options = PHImageRequestOptions()
-        options.version = .original
-        PHImageManager.default().requestImage(for: asset, targetSize: targetSize, contentMode: contentMode, options: options) { image, _ in
-            guard let image = image else { return }
-            switch contentMode {
-            case .aspectFill:
-                self.contentMode = .scaleAspectFill
-            case .aspectFit:
-                self.contentMode = .scaleAspectFit
-            }
-            self.image = image
-        }
     }
 }

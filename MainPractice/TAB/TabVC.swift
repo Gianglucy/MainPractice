@@ -23,6 +23,8 @@ class TabVC: UITabBarController {
 //        let hobbiesVC = HobbiesVC(nibName: "HobbiesVC", bundle: nil)
         let testVC = TestVC(nibName: "TestVC", bundle: nil)
 //        let firstVC = FirstVC(nibName: "FirstVC", bundle: nil)
+//        let albumVC = AlbumVC(nibName: "AlbumVC", bundle: nil)
+        
         
         let movieNav = UINavigationController(rootViewController: testVC)
         let movieSecondNav = UINavigationController(rootViewController: movieSecondVC)

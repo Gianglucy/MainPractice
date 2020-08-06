@@ -34,7 +34,23 @@ class PhotoCell: UICollectionViewCell {
         myIMG.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
     }
     
-    func configWithImage(_ image: UIImage?) {
-                self.myIMG.image = image
+    func configWithImage(imageAsset: PHAsset) {
+                self.myIMG.image = getUIImage(asset: imageAsset)
+    }
+    
+    func getUIImage(asset: PHAsset) -> UIImage? {
+        
+        var img: UIImage?
+        let manager = PHImageManager.default()
+        let options = PHImageRequestOptions()
+        options.version = .original
+        options.isSynchronous = true
+        manager.requestImage(for: asset, targetSize: CGSize(width: 200.0, height: 200.0), contentMode: .aspectFit, options: nil, resultHandler: {(result, info)->Void in
+            guard let imgresult = result else{
+                return
+            }
+            img = imgresult
+        })
+        return img
     }
 }

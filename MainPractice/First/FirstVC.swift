@@ -112,7 +112,7 @@ extension FirstVC:UIImagePickerControllerDelegate, UINavigationControllerDelegat
     }
 }
 
-extension FirstVC:DataDelegate {
+extension FirstVC: PhotoVCDelegate {
     func passingImage(image: UIImage) {
         imgUser.image = image
     }

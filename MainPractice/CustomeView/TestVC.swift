@@ -77,7 +77,7 @@ extension TestVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
     }
 }
 
-extension TestVC: DataDelegate {
+extension TestVC: PhotoVCDelegate {
     func passingImage(image: UIImage) {
         let backGround = BackGroundVC(nibName: "BackGroundVC", bundle: nil)
         backGround.imageTemp = image
