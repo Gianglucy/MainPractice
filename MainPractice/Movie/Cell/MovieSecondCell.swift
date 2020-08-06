@@ -13,13 +13,19 @@ class MovieSecondCell: UICollectionViewCell {
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDecription: UILabel!
     @IBOutlet weak var imgMovie: UIImageView!
-    
+    var maiLoading = UIActivityIndicatorView()
+//    @IBOutlet weak var maiLoading: UIActivityIndicatorView!
     override func awakeFromNib() {
         super.awakeFromNib()
         setupUI()
     }
     
     func setupUI() {
+        self.addSubview(maiLoading)
+        maiLoading.translatesAutoresizingMaskIntoConstraints = false
+        maiLoading.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        maiLoading.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        
         imgMovie.image = UIImage(named: "img_image")
         imgMovie.contentMode = .scaleAspectFit
         imgMovie.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
@@ -31,11 +37,13 @@ class MovieSecondCell: UICollectionViewCell {
         self.layer.shadowRadius = 1
         self.clipsToBounds = false
         self.layer.masksToBounds = false
+        self.maiLoading.startAnimating()
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         self.imgMovie.image = nil
+        self.maiLoading.startAnimating()
     }
     
     func configCell(movie: Movie) {
@@ -50,6 +58,7 @@ class MovieSecondCell: UICollectionViewCell {
                     let data = try Data(contentsOf: url!)
                     DispatchQueue.main.async {
                         self.imgMovie.image = UIImage(data: data)
+                        self.maiLoading.stopAnimating()
                     }
                 } catch {
                     
@@ -57,6 +66,7 @@ class MovieSecondCell: UICollectionViewCell {
             } else {
                 DispatchQueue.main.async {
                     self.imgMovie.image = UIImage(named: "img_image")
+                    self.maiLoading.startAnimating()
                 }
             }
         }

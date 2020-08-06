@@ -53,21 +53,6 @@ class MovieSecondVC: UIViewController, UICollectionViewDelegateFlowLayout {
         
         clvMovieSecond.register(UINib(nibName: "MovieSecondCell", bundle: nil), forCellWithReuseIdentifier: "MovieSecondCell")
         
-//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-//        layout.sectionInset = UIEdgeInsets(top: 0, left: spacing, bottom: spacing, right: spacing)
-//        layout.minimumInteritemSpacing = 0
-//        layout.minimumLineSpacing = spacing
-//        clvMovieSecond!.collectionViewLayout = layout
-        
-//        let layoutOx = UICollectionViewFlowLayout()
-//        layoutOx.scrollDirection = .horizontal
-//        layoutOx.minimumInteritemSpacing = 0
-//        layoutOx.minimumLineSpacing = spacing
-//        clvMovieSecond.alwaysBounceHorizontal = false
-//        clvMovieSecond.alwaysBounceVertical = false
-//        clvMovieSecond.backgroundColor = .clear
-//        self.clvMovieSecond.setCollectionViewLayout(layoutOx, animated: false)
-        
         let layoutOy = UICollectionViewFlowLayout()
         layoutOy.scrollDirection = .vertical
         layoutOy.minimumInteritemSpacing = 0
@@ -97,6 +82,5 @@ extension MovieSecondVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        print("aaaa: \(data[indexPath.row].original_title) bbbb: \(data[indexPath.row].poster_path) ")
     }
 }

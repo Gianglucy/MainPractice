@@ -10,5 +10,16 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "MovieSecondCell.setupUI():MovieSecondCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CGFloat(Constants.cornerRadius.rawValue)">
+            </PersistentString>
+            <PersistentString
+               value = "Constants.cornerRadius.rawValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

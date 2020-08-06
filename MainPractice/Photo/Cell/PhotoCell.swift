@@ -11,7 +11,7 @@ import Photos
 
 class PhotoCell: UICollectionViewCell {
     
-    var myIMG = UIImageView()
+    @IBOutlet weak var myIMG: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,9 +20,13 @@ class PhotoCell: UICollectionViewCell {
         setupUI()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        myIMG.image = nil
+    }
+    
     func setupUI() {
         self.contentView.addSubview(myIMG)
-        //        myIMG.image = UIImage(named: "ic_avatar_red")
         myIMG.translatesAutoresizingMaskIntoConstraints = false
         myIMG.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0).isActive = true
         myIMG.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true

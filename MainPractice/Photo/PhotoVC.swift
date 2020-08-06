@@ -28,8 +28,8 @@ class PhotoVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
         getPhotos()
+        setupUI()
     }
     
     func setupUI() {
@@ -74,9 +74,6 @@ class PhotoVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = myCV.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
         let asset = self.results!.object(at: indexPath.row)
-        //        cell.myIMG.fetchImage(asset: asset!, contentMode: .aspectFit, targetSize: cell.myIMG.frame.size)
-        //        cell.myIMG.contentMode = .scaleAspectFill
-        //        print(array)
         PHCachingImageManager.default().requestImage(for: asset, targetSize:  CGSize(width: width, height: height), contentMode: .aspectFill, options: nil){ (image,_) in cell.configWithImage(image)
         }
         return cell
@@ -96,31 +93,33 @@ class PhotoVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         navigationController?.pushViewController(imageDetailVC, animated: true)
     }
     
-    fileprivate func getPhotos() {
-        let manager = PHImageManager.default()
-        let requestOptions = PHImageRequestOptions()
-        requestOptions.isSynchronous = false
-        requestOptions.deliveryMode = .highQualityFormat
-        // .highQualityFormat will return better quality photos
-        let fetchOptions = PHFetchOptions()
-        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
-        
-        self.results = PHAsset.fetchAssets(with: .image, options: fetchOptions)
-        if results.count > 0 {
-            for i in 0..<results.count {
-                let asset = results.object(at: i)
-                let size = CGSize(width: 700, height: 700)
-                manager.requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: requestOptions) { (image, _) in
-                    if let image = image {
-                        self.array.append(image)
-                        self.myCV.reloadData()
-                    } else {
-                        print("error asset to image")
+    func getPhotos() {
+        DispatchQueue.global(qos: .background).async {
+            let manager = PHImageManager.default()
+            let requestOptions = PHImageRequestOptions()
+            requestOptions.isSynchronous = false
+            requestOptions.deliveryMode = .highQualityFormat
+            // .highQualityFormat will return better quality photos
+            let fetchOptions = PHFetchOptions()
+            fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: false)]
+            
+            self.results = PHAsset.fetchAssets(with: .image, options: fetchOptions)
+            if self.results.count > 0 {
+                for i in 0..<self.results.count {
+                    let asset = self.results.object(at: i)
+                    let size = CGSize(width: 700, height: 700)
+                    manager.requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: requestOptions) { (image, _) in
+                        if let image = image {
+                            self.array.append(image)
+                            self.myCV.reloadData()
+                        } else {
+                            print("error asset to image")
+                        }
                     }
                 }
+            } else {
+                print("no photos to display")
             }
-        } else {
-            print("no photos to display")
         }
     }
 }

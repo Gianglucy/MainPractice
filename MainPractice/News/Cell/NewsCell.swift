@@ -53,7 +53,6 @@ class NewsCell: UITableViewCell {
             }
             lblTitle.text = news.title ?? "No title"
             lblContent.text = news.content ?? "No decription"
-//            viewLine.isHidden = isLast
             let queue = DispatchQueue(label: "loadImage",qos: .background)
             queue.async { [weak self] in
                 if let pathURL: String = news.image {

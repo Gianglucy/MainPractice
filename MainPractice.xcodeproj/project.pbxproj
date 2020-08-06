@@ -52,6 +52,14 @@
 		18E6484424D7E95E0043A6ED /* NewsDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E6484224D7E95E0043A6ED /* NewsDetailVC.xib */; };
 		18E6484824D90FBD0043A6ED /* HobbiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6484624D90FBD0043A6ED /* HobbiesVC.swift */; };
 		18E6484924D90FBD0043A6ED /* HobbiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E6484724D90FBD0043A6ED /* HobbiesVC.xib */; };
+		18E6484D24D912080043A6ED /* HobbiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6484B24D912080043A6ED /* HobbiesCell.swift */; };
+		18E6484E24D912080043A6ED /* HobbiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E6484C24D912080043A6ED /* HobbiesCell.xib */; };
+		18E6485624DA91C10043A6ED /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6485424DA91C10043A6ED /* TestVC.swift */; };
+		18E6485724DA91C10043A6ED /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E6485524DA91C10043A6ED /* TestVC.xib */; };
+		18E6486124DAB02E0043A6ED /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6486024DAB02E0043A6ED /* ModalView.swift */; };
+		18E6486324DAB03D0043A6ED /* ModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E6486224DAB03D0043A6ED /* ModalView.xib */; };
+		18E6486624DABD870043A6ED /* BackGroundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6486424DABD870043A6ED /* BackGroundVC.swift */; };
+		18E6486724DABD870043A6ED /* BackGroundVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E6486524DABD870043A6ED /* BackGroundVC.xib */; };
 		18EC04E624C47D9A00533529 /* ImageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC04E424C47D9A00533529 /* ImageDetailVC.swift */; };
 		18EC04E724C47D9B00533529 /* ImageDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EC04E524C47D9A00533529 /* ImageDetailVC.xib */; };
 		18FC309224C69170001A9322 /* ToDoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC309024C69170001A9322 /* ToDoListVC.swift */; };
@@ -111,6 +119,14 @@
 		18E6484224D7E95E0043A6ED /* NewsDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailVC.xib; sourceTree = "<group>"; };
 		18E6484624D90FBD0043A6ED /* HobbiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesVC.swift; sourceTree = "<group>"; };
 		18E6484724D90FBD0043A6ED /* HobbiesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HobbiesVC.xib; sourceTree = "<group>"; };
+		18E6484B24D912080043A6ED /* HobbiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesCell.swift; sourceTree = "<group>"; };
+		18E6484C24D912080043A6ED /* HobbiesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HobbiesCell.xib; sourceTree = "<group>"; };
+		18E6485424DA91C10043A6ED /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		18E6485524DA91C10043A6ED /* TestVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
+		18E6486024DAB02E0043A6ED /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		18E6486224DAB03D0043A6ED /* ModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalView.xib; sourceTree = "<group>"; };
+		18E6486424DABD870043A6ED /* BackGroundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundVC.swift; sourceTree = "<group>"; };
+		18E6486524DABD870043A6ED /* BackGroundVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackGroundVC.xib; sourceTree = "<group>"; };
 		18EC04E424C47D9A00533529 /* ImageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailVC.swift; sourceTree = "<group>"; };
 		18EC04E524C47D9A00533529 /* ImageDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetailVC.xib; sourceTree = "<group>"; };
 		18FC309024C69170001A9322 /* ToDoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListVC.swift; sourceTree = "<group>"; };
@@ -161,6 +177,7 @@
 		186A74C324BFE97A00982C54 /* MainPractice */ = {
 			isa = PBXGroup;
 			children = (
+				18E6485324DA91110043A6ED /* CustomeView */,
 				18E6484524D90F100043A6ED /* AutoSizeCollectionView */,
 				18E6483E24D7E8C30043A6ED /* News */,
 				188FEE0C24D268A000495D5C /* TAB */,
@@ -268,10 +285,33 @@
 		18E6484524D90F100043A6ED /* AutoSizeCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				18E6484A24D911DF0043A6ED /*  Cell */,
 				18E6484624D90FBD0043A6ED /* HobbiesVC.swift */,
 				18E6484724D90FBD0043A6ED /* HobbiesVC.xib */,
 			);
 			path = AutoSizeCollectionView;
+			sourceTree = "<group>";
+		};
+		18E6484A24D911DF0043A6ED /*  Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18E6484B24D912080043A6ED /* HobbiesCell.swift */,
+				18E6484C24D912080043A6ED /* HobbiesCell.xib */,
+			);
+			path = " Cell";
+			sourceTree = "<group>";
+		};
+		18E6485324DA91110043A6ED /* CustomeView */ = {
+			isa = PBXGroup;
+			children = (
+				18E6485424DA91C10043A6ED /* TestVC.swift */,
+				18E6485524DA91C10043A6ED /* TestVC.xib */,
+				18E6486024DAB02E0043A6ED /* ModalView.swift */,
+				18E6486224DAB03D0043A6ED /* ModalView.xib */,
+				18E6486424DABD870043A6ED /* BackGroundVC.swift */,
+				18E6486524DABD870043A6ED /* BackGroundVC.xib */,
+			);
+			path = CustomeView;
 			sourceTree = "<group>";
 		};
 		18EC04E024C4787700533529 /* Photo */ = {
@@ -399,9 +439,12 @@
 			files = (
 				186A74D124BFE97B00982C54 /* LaunchScreen.storyboard in Resources */,
 				18EC04E724C47D9B00533529 /* ImageDetailVC.xib in Resources */,
+				18E6486324DAB03D0043A6ED /* ModalView.xib in Resources */,
+				18E6485724DA91C10043A6ED /* TestVC.xib in Resources */,
 				188FEE1A24D3C95B00495D5C /* MovieThirdTwoCell.xib in Resources */,
 				188FEE1224D3B80300495D5C /* MovieThirdVC.xib in Resources */,
 				18E6483D24D7BEA90043A6ED /* NewsCell.xib in Resources */,
+				18E6486724DABD870043A6ED /* BackGroundVC.xib in Resources */,
 				18FC309324C69170001A9322 /* ToDoListVC.xib in Resources */,
 				18FC30CD24CE7309001A9322 /* MovieVC.xib in Resources */,
 				18FC309724C6924C001A9322 /* ToDoListCell.xib in Resources */,
@@ -415,6 +458,7 @@
 				186A74F324C1470000982C54 /* PhotoVC.xib in Resources */,
 				186A74EC24BFFD5F00982C54 /* UserInfoVC.xib in Resources */,
 				188FEE1E24D3F87D00495D5C /* MovieFourthVC.xib in Resources */,
+				18E6484E24D912080043A6ED /* HobbiesCell.xib in Resources */,
 				186A74F924C16BFC00982C54 /* PhotoCell.xib in Resources */,
 				188FEE2224D3FB3400495D5C /* MovieTblCell.xib in Resources */,
 				188FEE0B24D2672000495D5C /* TabVC.xib in Resources */,
@@ -431,8 +475,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E6485624DA91C10043A6ED /* TestVC.swift in Sources */,
 				1810C44F24CE854200FA81C0 /* MovieCell.swift in Sources */,
 				188FEE1124D3B80300495D5C /* MovieThirdVC.swift in Sources */,
+				18E6484D24D912080043A6ED /* HobbiesCell.swift in Sources */,
 				188FEE0E24D26CC100495D5C /* Constants.swift in Sources */,
 				1810C44D24CE7FF200FA81C0 /* Movie.swift in Sources */,
 				188FEE1524D3BA3B00495D5C /* MovieThirdOneCell.swift in Sources */,
@@ -443,11 +489,13 @@
 				186A74E724BFF00300982C54 /* FirstVC.swift in Sources */,
 				18E6483C24D7BEA90043A6ED /* NewsCell.swift in Sources */,
 				186A74EF24C141A800982C54 /* User.swift in Sources */,
+				18E6486624DABD870043A6ED /* BackGroundVC.swift in Sources */,
 				18E6484324D7E95E0043A6ED /* NewsDetailVC.swift in Sources */,
 				18FC309624C6924C001A9322 /* ToDoListCell.swift in Sources */,
 				18FC309924C693D8001A9322 /* Task.swift in Sources */,
 				188FEE0A24D2672000495D5C /* TabVC.swift in Sources */,
 				188FEE2524D414FA00495D5C /* MovieFifthVC.swift in Sources */,
+				18E6486124DAB02E0043A6ED /* ModalView.swift in Sources */,
 				186A74C524BFE97A00982C54 /* AppDelegate.swift in Sources */,
 				186A74C724BFE97A00982C54 /* SceneDelegate.swift in Sources */,
 				1810C45224CE91FF00FA81C0 /* ServerPath.swift in Sources */,
