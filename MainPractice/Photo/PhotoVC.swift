@@ -56,7 +56,9 @@ class PhotoVC: UIViewController, PhotoVCDelegate {
         let options = PHImageRequestOptions()
         options.version = .original
         options.isSynchronous = true
-        manager.requestImage(for: asset, targetSize: CGSize(width: 200.0, height: 200.0), contentMode: .aspectFit, options: nil, resultHandler: {(result, info)->Void in
+        options.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+
+        manager.requestImage(for: asset, targetSize: PHImageManagerMaximumSize, contentMode: PHImageContentMode.default, options: options, resultHandler: {(result, info)->Void in
             guard let imgresult = result else{
                 return
             }

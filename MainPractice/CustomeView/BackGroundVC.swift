@@ -20,15 +20,17 @@ class BackGroundVC: UIViewController, UINavigationControllerDelegate {
     }
     
     func setupUI() {
+        view.backgroundColor = .clear
         modalView.delegate = self
         modalView.btnDone.backgroundColor = .systemOrange
         modalView.btnDone.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
+        modalView.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
         
         modalView.imvPhoto.layer.cornerRadius = view.bounds.width * 0.12
         if let image = imageTemp {
             modalView.imvPhoto.image = image
             modalView.lblTitle.text = "Congratulation"
-            modalView.lblContent.text = "Update Successful Update Successful Update Successful"
+            modalView.lblContent.text = "Update Successful Update Successful Update Successful Update Successful"
         } else {
             modalView.imvPhoto.image = #imageLiteral(resourceName: "ic_avatar_red")
             modalView.lblTitle.text = "Warn"

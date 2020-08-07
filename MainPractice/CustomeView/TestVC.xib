@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestVC" customModule="MainPractice" customModuleProvider="target">
             <connections>
+                <outlet property="btnShow" destination="0qX-OX-Oea" id="C47-BE-leT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

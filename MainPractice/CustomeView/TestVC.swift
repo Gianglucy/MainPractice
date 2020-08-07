@@ -11,8 +11,15 @@ import Photos
 
 class TestVC: UIViewController {
     
+    @IBOutlet weak var btnShow: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    func setupUI() {
+        btnShow.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
     }
     
     @IBAction func showSuccessView(_ sender: UIButton) {
@@ -82,7 +89,7 @@ extension TestVC: PhotoVCDelegate {
         let backGround = BackGroundVC(nibName: "BackGroundVC", bundle: nil)
         backGround.imageTemp = image
         let navController = UINavigationController(rootViewController: backGround)
-        navController.modalPresentationStyle = .fullScreen
+        navController.modalPresentationStyle = .overCurrentContext
         navController.modalTransitionStyle = .crossDissolve
         self.present(navController, animated: true, completion: nil)
     }

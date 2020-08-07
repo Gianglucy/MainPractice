@@ -29,8 +29,8 @@ class ImageDetailVC: UIViewController ,UIScrollViewDelegate {
     }
     
     @objc func choose() {
-        delegate?.passingImage(image: image!)
         navigationController?.popToRootViewController(animated: true)
+        delegate?.passingImage(image: image!)
     }
     
     func setUpView() {

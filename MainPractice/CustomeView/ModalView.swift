@@ -19,7 +19,7 @@ class ModalView: UIView {
     @IBOutlet weak var lblContent: UILabel!
     @IBOutlet weak var imvPhoto: UIImageView!
     var delegate: ModalViewDelegate?
-    var didSentData:((String)->Void)?
+//    var didSentData:((String)->Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,10 +37,15 @@ class ModalView: UIView {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         contentView.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
+        
+        let myColor = UIColor.white
+        
+        imvPhoto.layer.borderWidth = 2
+        imvPhoto.layer.borderColor = myColor.cgColor
     }
     
     @IBAction func close(_ sender: UIButton) {
-        didSentData?("abc")
+//        didSentData?("abc")
         delegate?.handlePhoto()
     }
 }
