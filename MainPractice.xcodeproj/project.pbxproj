@@ -11,6 +11,12 @@
 		1810C44D24CE7FF200FA81C0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C44C24CE7FF200FA81C0 /* Movie.swift */; };
 		1810C44F24CE854200FA81C0 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C44E24CE854200FA81C0 /* MovieCell.swift */; };
 		1810C45224CE91FF00FA81C0 /* ServerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810C45124CE91FF00FA81C0 /* ServerPath.swift */; };
+		181ACE2624DD3C55007A4845 /* MovieTestCustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181ACE2424DD3C55007A4845 /* MovieTestCustomVC.swift */; };
+		181ACE2724DD3C55007A4845 /* MovieTestCustomVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181ACE2524DD3C55007A4845 /* MovieTestCustomVC.xib */; };
+		181ACE2E24DD40F2007A4845 /* MovieTestCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181ACE2C24DD40F2007A4845 /* MovieTestCustomCell.swift */; };
+		181ACE2F24DD40F2007A4845 /* MovieTestCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181ACE2D24DD40F2007A4845 /* MovieTestCustomCell.xib */; };
+		181ACE3124DD4C03007A4845 /* MovieCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181ACE3024DD4C03007A4845 /* MovieCustomCell.xib */; };
+		181ACE3324DD4D93007A4845 /* MovieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181ACE3224DD4D93007A4845 /* MovieCustomCell.swift */; };
 		186A74C524BFE97A00982C54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A74C424BFE97A00982C54 /* AppDelegate.swift */; };
 		186A74C724BFE97A00982C54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A74C624BFE97A00982C54 /* SceneDelegate.swift */; };
 		186A74CE24BFE97B00982C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186A74CD24BFE97B00982C54 /* Assets.xcassets */; };
@@ -80,6 +86,12 @@
 		1810C44C24CE7FF200FA81C0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		1810C44E24CE854200FA81C0 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		1810C45124CE91FF00FA81C0 /* ServerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerPath.swift; sourceTree = "<group>"; };
+		181ACE2424DD3C55007A4845 /* MovieTestCustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTestCustomVC.swift; sourceTree = "<group>"; };
+		181ACE2524DD3C55007A4845 /* MovieTestCustomVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTestCustomVC.xib; sourceTree = "<group>"; };
+		181ACE2C24DD40F2007A4845 /* MovieTestCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTestCustomCell.swift; sourceTree = "<group>"; };
+		181ACE2D24DD40F2007A4845 /* MovieTestCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTestCustomCell.xib; sourceTree = "<group>"; };
+		181ACE3024DD4C03007A4845 /* MovieCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCustomCell.xib; sourceTree = "<group>"; };
+		181ACE3224DD4D93007A4845 /* MovieCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomCell.swift; sourceTree = "<group>"; };
 		186A74C124BFE97A00982C54 /* MainPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186A74C424BFE97A00982C54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186A74C624BFE97A00982C54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +178,35 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
+		181ACE1924DD3019007A4845 /* MovieCustomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				181ACE1E24DD3AD2007A4845 /* Movie */,
+				181ACE3024DD4C03007A4845 /* MovieCustomCell.xib */,
+				181ACE3224DD4D93007A4845 /* MovieCustomCell.swift */,
+			);
+			path = MovieCustomeCell;
+			sourceTree = "<group>";
+		};
+		181ACE1E24DD3AD2007A4845 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				181ACE2424DD3C55007A4845 /* MovieTestCustomVC.swift */,
+				181ACE2524DD3C55007A4845 /* MovieTestCustomVC.xib */,
+				181ACE1F24DD3AE4007A4845 /* Cell */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		181ACE1F24DD3AE4007A4845 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				181ACE2C24DD40F2007A4845 /* MovieTestCustomCell.swift */,
+				181ACE2D24DD40F2007A4845 /* MovieTestCustomCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		186A74B824BFE97A00982C54 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +226,7 @@
 		186A74C324BFE97A00982C54 /* MainPractice */ = {
 			isa = PBXGroup;
 			children = (
+				181ACE1924DD3019007A4845 /* MovieCustomeCell */,
 				18E6486824DBEE7E0043A6ED /* Album */,
 				18E6485324DA91110043A6ED /* CustomeView */,
 				18E6484524D90F100043A6ED /* AutoSizeCollectionView */,
@@ -465,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181ACE2724DD3C55007A4845 /* MovieTestCustomVC.xib in Resources */,
 				18E6486C24DBEEED0043A6ED /* AlbumVC.xib in Resources */,
 				186A74D124BFE97B00982C54 /* LaunchScreen.storyboard in Resources */,
 				18EC04E724C47D9B00533529 /* ImageDetailVC.xib in Resources */,
@@ -481,12 +524,14 @@
 				188FEE2624D414FA00495D5C /* MovieFifthVC.xib in Resources */,
 				186A74E824BFF00300982C54 /* FirstVC.xib in Resources */,
 				1810C44B24CE7B6200FA81C0 /* MovieCell.xib in Resources */,
+				181ACE2F24DD40F2007A4845 /* MovieTestCustomCell.xib in Resources */,
 				18E6484924D90FBD0043A6ED /* HobbiesVC.xib in Resources */,
 				186A74CE24BFE97B00982C54 /* Assets.xcassets in Resources */,
 				188FEDF324D0061800495D5C /* MovieSecondCell.xib in Resources */,
 				18E6484424D7E95E0043A6ED /* NewsDetailVC.xib in Resources */,
 				186A74F324C1470000982C54 /* PhotoVC.xib in Resources */,
 				186A74EC24BFFD5F00982C54 /* UserInfoVC.xib in Resources */,
+				181ACE3124DD4C03007A4845 /* MovieCustomCell.xib in Resources */,
 				188FEE1E24D3F87D00495D5C /* MovieFourthVC.xib in Resources */,
 				18E6484E24D912080043A6ED /* HobbiesCell.xib in Resources */,
 				186A74F924C16BFC00982C54 /* PhotoCell.xib in Resources */,
@@ -522,9 +567,11 @@
 				186A74EF24C141A800982C54 /* User.swift in Sources */,
 				18E6486624DABD870043A6ED /* BackGroundVC.swift in Sources */,
 				18E6484324D7E95E0043A6ED /* NewsDetailVC.swift in Sources */,
+				181ACE3324DD4D93007A4845 /* MovieCustomCell.swift in Sources */,
 				18FC309624C6924C001A9322 /* ToDoListCell.swift in Sources */,
 				18FC309924C693D8001A9322 /* Task.swift in Sources */,
 				188FEE0A24D2672000495D5C /* TabVC.swift in Sources */,
+				181ACE2624DD3C55007A4845 /* MovieTestCustomVC.swift in Sources */,
 				188FEE2524D414FA00495D5C /* MovieFifthVC.swift in Sources */,
 				18E6486124DAB02E0043A6ED /* ModalView.swift in Sources */,
 				186A74C524BFE97A00982C54 /* AppDelegate.swift in Sources */,
@@ -532,6 +579,7 @@
 				1810C45224CE91FF00FA81C0 /* ServerPath.swift in Sources */,
 				18EC04E624C47D9A00533529 /* ImageDetailVC.swift in Sources */,
 				18FC309224C69170001A9322 /* ToDoListVC.swift in Sources */,
+				181ACE2E24DD40F2007A4845 /* MovieTestCustomCell.swift in Sources */,
 				188FEDF224D0061800495D5C /* MovieSecondCell.swift in Sources */,
 				18E6483924D7B7D20043A6ED /* News.swift in Sources */,
 				18FC30CC24CE7309001A9322 /* MovieVC.swift in Sources */,

@@ -19,7 +19,6 @@ class ModalView: UIView {
     @IBOutlet weak var lblContent: UILabel!
     @IBOutlet weak var imvPhoto: UIImageView!
     var delegate: ModalViewDelegate?
-//    var didSentData:((String)->Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,7 +44,6 @@ class ModalView: UIView {
     }
     
     @IBAction func close(_ sender: UIButton) {
-//        didSentData?("abc")
         delegate?.handlePhoto()
     }
 }

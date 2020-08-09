@@ -15,7 +15,7 @@ class TabVC: UITabBarController {
         super.viewDidLoad()
         
 //        let movieVC = MovieVC(nibName: "MovieVC", bundle: nil)
-        let movieSecondVC = MovieSecondVC(nibName: "MovieSecondVC", bundle: nil)
+//        let movieSecondVC = MovieSecondVC(nibName: "MovieSecondVC", bundle: nil)
         let movieThirdVC = MovieThirdVC(nibName: "MovieThirdVC", bundle: nil)
         let movieFourthVC = MovieFourthVC(nibName: "MovieFourthVC", bundle: nil)
         let movieFifthVC = MovieFifthVC(nibName: "MovieFifthVC", bundle: nil)
@@ -24,10 +24,11 @@ class TabVC: UITabBarController {
         let testVC = TestVC(nibName: "TestVC", bundle: nil)
 //        let firstVC = FirstVC(nibName: "FirstVC", bundle: nil)
 //        let albumVC = AlbumVC(nibName: "AlbumVC", bundle: nil)
+        let movieCustomCellVC = MovieTestCustomVC(nibName: "MovieTestCustomVC", bundle: nil)
         
         
-        let movieNav = UINavigationController(rootViewController: testVC)
-        let movieSecondNav = UINavigationController(rootViewController: movieSecondVC)
+        let movieNav = UINavigationController(rootViewController: movieCustomCellVC)
+        let movieSecondNav = UINavigationController(rootViewController: testVC)
         let movieThirdNav = UINavigationController(rootViewController: movieThirdVC)
         let movieFourthNav = UINavigationController(rootViewController: movieFourthVC)
         let movieFifthNav = UINavigationController(rootViewController: movieFifthVC)
