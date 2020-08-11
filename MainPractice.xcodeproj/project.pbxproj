@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,6 +49,10 @@
 		188FEE2224D3FB3400495D5C /* MovieTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE2024D3FB3400495D5C /* MovieTblCell.xib */; };
 		188FEE2524D414FA00495D5C /* MovieFifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE2324D414FA00495D5C /* MovieFifthVC.swift */; };
 		188FEE2624D414FA00495D5C /* MovieFifthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE2424D414FA00495D5C /* MovieFifthVC.xib */; };
+		18AE8EFA24E131F600EDD8FE /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE8EF824E131F600EDD8FE /* RegisterVC.swift */; };
+		18AE8EFB24E131F600EDD8FE /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE8EF924E131F600EDD8FE /* RegisterVC.xib */; };
+		18AE8EFF24E2351500EDD8FE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE8EFD24E2351500EDD8FE /* SignUpVC.swift */; };
+		18AE8F0024E2351500EDD8FE /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE8EFE24E2351500EDD8FE /* SignUpVC.xib */; };
 		18E6483624D7B4110043A6ED /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6483424D7B4110043A6ED /* NewsVC.swift */; };
 		18E6483724D7B4110043A6ED /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E6483524D7B4110043A6ED /* NewsVC.xib */; };
 		18E6483924D7B7D20043A6ED /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6483824D7B7D20043A6ED /* News.swift */; };
@@ -79,6 +83,7 @@
 		18FC309924C693D8001A9322 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC309824C693D8001A9322 /* Task.swift */; };
 		18FC30CC24CE7309001A9322 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC30CA24CE7309001A9322 /* MovieVC.swift */; };
 		18FC30CD24CE7309001A9322 /* MovieVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FC30CB24CE7309001A9322 /* MovieVC.xib */; };
+		BE997981BD3FFD12F3927D91 /* Pods_MainPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2622BC1E8B70DEE0A8D6F27B /* Pods_MainPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +131,10 @@
 		188FEE2024D3FB3400495D5C /* MovieTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTblCell.xib; sourceTree = "<group>"; };
 		188FEE2324D414FA00495D5C /* MovieFifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFifthVC.swift; sourceTree = "<group>"; };
 		188FEE2424D414FA00495D5C /* MovieFifthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieFifthVC.xib; sourceTree = "<group>"; };
+		18AE8EF824E131F600EDD8FE /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		18AE8EF924E131F600EDD8FE /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		18AE8EFD24E2351500EDD8FE /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		18AE8EFE24E2351500EDD8FE /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
 		18E6483424D7B4110043A6ED /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		18E6483524D7B4110043A6ED /* NewsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsVC.xib; sourceTree = "<group>"; };
 		18E6483824D7B7D20043A6ED /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
@@ -156,6 +165,9 @@
 		18FC309824C693D8001A9322 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		18FC30CA24CE7309001A9322 /* MovieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVC.swift; sourceTree = "<group>"; };
 		18FC30CB24CE7309001A9322 /* MovieVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieVC.xib; sourceTree = "<group>"; };
+		2622BC1E8B70DEE0A8D6F27B /* Pods_MainPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MainPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E637128341FCF25A939423E3 /* Pods-MainPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainPractice.release.xcconfig"; path = "Target Support Files/Pods-MainPractice/Pods-MainPractice.release.xcconfig"; sourceTree = "<group>"; };
+		FED8F8B2FCC3BC5BD66A686D /* Pods-MainPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainPractice.debug.xcconfig"; path = "Target Support Files/Pods-MainPractice/Pods-MainPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE997981BD3FFD12F3927D91 /* Pods_MainPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +225,8 @@
 			children = (
 				186A74C324BFE97A00982C54 /* MainPractice */,
 				186A74C224BFE97A00982C54 /* Products */,
+				5D4872B894D0506C3A0B0C92 /* Pods */,
+				8B81ED2E6DF34DBAC2D26DA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +241,8 @@
 		186A74C324BFE97A00982C54 /* MainPractice */ = {
 			isa = PBXGroup;
 			children = (
+				18AE8EFC24E234B500EDD8FE /* SignUp */,
+				18AE8EF724E131BB00EDD8FE /* Register */,
 				181ACE1924DD3019007A4845 /* MovieCustomeCell */,
 				18E6486824DBEE7E0043A6ED /* Album */,
 				18E6485324DA91110043A6ED /* CustomeView */,
@@ -302,6 +319,24 @@
 				188FEE0924D2672000495D5C /* TabVC.xib */,
 			);
 			path = TAB;
+			sourceTree = "<group>";
+		};
+		18AE8EF724E131BB00EDD8FE /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				18AE8EF824E131F600EDD8FE /* RegisterVC.swift */,
+				18AE8EF924E131F600EDD8FE /* RegisterVC.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		18AE8EFC24E234B500EDD8FE /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				18AE8EFD24E2351500EDD8FE /* SignUpVC.swift */,
+				18AE8EFE24E2351500EDD8FE /* SignUpVC.xib */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		18E6483E24D7E8C30043A6ED /* News */ = {
@@ -449,6 +484,23 @@
 			path = ToDoListCell;
 			sourceTree = "<group>";
 		};
+		5D4872B894D0506C3A0B0C92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FED8F8B2FCC3BC5BD66A686D /* Pods-MainPractice.debug.xcconfig */,
+				E637128341FCF25A939423E3 /* Pods-MainPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8B81ED2E6DF34DBAC2D26DA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2622BC1E8B70DEE0A8D6F27B /* Pods_MainPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -456,9 +508,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 186A74D524BFE97B00982C54 /* Build configuration list for PBXNativeTarget "MainPractice" */;
 			buildPhases = (
+				574D83A08547787D33B28C96 /* [CP] Check Pods Manifest.lock */,
 				186A74BD24BFE97A00982C54 /* Sources */,
 				186A74BE24BFE97A00982C54 /* Frameworks */,
 				186A74BF24BFE97A00982C54 /* Resources */,
+				7068EED78811A4108EE9BBCD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -509,8 +563,10 @@
 			files = (
 				181ACE2724DD3C55007A4845 /* MovieTestCustomVC.xib in Resources */,
 				18E6486C24DBEEED0043A6ED /* AlbumVC.xib in Resources */,
+				18AE8F0024E2351500EDD8FE /* SignUpVC.xib in Resources */,
 				186A74D124BFE97B00982C54 /* LaunchScreen.storyboard in Resources */,
 				18EC04E724C47D9B00533529 /* ImageDetailVC.xib in Resources */,
+				18AE8EFB24E131F600EDD8FE /* RegisterVC.xib in Resources */,
 				18E6486324DAB03D0043A6ED /* ModalView.xib in Resources */,
 				18E6485724DA91C10043A6ED /* TestVC.xib in Resources */,
 				188FEE1A24D3C95B00495D5C /* MovieThirdTwoCell.xib in Resources */,
@@ -545,6 +601,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		574D83A08547787D33B28C96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MainPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7068EED78811A4108EE9BBCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainPractice/Pods-MainPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainPractice/Pods-MainPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainPractice/Pods-MainPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		186A74BD24BFE97A00982C54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -561,6 +659,7 @@
 				186A74F824C16BFC00982C54 /* PhotoCell.swift in Sources */,
 				188FEDEE24CFE02400495D5C /* MovieSecondVC.swift in Sources */,
 				18E6483624D7B4110043A6ED /* NewsVC.swift in Sources */,
+				18AE8EFA24E131F600EDD8FE /* RegisterVC.swift in Sources */,
 				188FEE1924D3C95B00495D5C /* MovieThirdTwoCell.swift in Sources */,
 				186A74E724BFF00300982C54 /* FirstVC.swift in Sources */,
 				18E6483C24D7BEA90043A6ED /* NewsCell.swift in Sources */,
@@ -585,6 +684,7 @@
 				18FC30CC24CE7309001A9322 /* MovieVC.swift in Sources */,
 				186A74EB24BFFD5F00982C54 /* UserInfoVC.swift in Sources */,
 				186A74F224C1470000982C54 /* PhotoVC.swift in Sources */,
+				18AE8EFF24E2351500EDD8FE /* SignUpVC.swift in Sources */,
 				188FEE1D24D3F87D00495D5C /* MovieFourthVC.swift in Sources */,
 				188FEE2124D3FB3400495D5C /* MovieTblCell.swift in Sources */,
 				18E6484824D90FBD0043A6ED /* HobbiesVC.swift in Sources */,
@@ -722,6 +822,7 @@
 		};
 		186A74D624BFE97B00982C54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED8F8B2FCC3BC5BD66A686D /* Pods-MainPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -740,6 +841,7 @@
 		};
 		186A74D724BFE97B00982C54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E637128341FCF25A939423E3 /* Pods-MainPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

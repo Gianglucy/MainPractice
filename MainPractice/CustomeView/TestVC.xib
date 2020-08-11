@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestVC" customModule="MainPractice" customModuleProvider="target">
             <connections>
                 <outlet property="btnShow" destination="0qX-OX-Oea" id="C47-BE-leT"/>
+                <outlet property="imvPhoto" destination="55j-iq-B8y" id="Qph-kV-Egb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,12 +30,21 @@
                         <action selector="showSuccessView:" destination="-1" eventType="touchUpInside" id="qBh-xw-Ycm"/>
                     </connections>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="55j-iq-B8y">
+                    <rect key="frame" x="103.5" y="349.5" width="207" height="207"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="55j-iq-B8y" secondAttribute="height" multiplier="1:1" id="Hrf-ta-h0h"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="0qX-OX-Oea" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="7YM-GW-ofN"/>
+                <constraint firstItem="55j-iq-B8y" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="SNk-z1-h0P"/>
                 <constraint firstItem="0qX-OX-Oea" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="STE-x0-Cl2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0qX-OX-Oea" secondAttribute="trailing" constant="16" id="bH8-VP-fu7"/>
+                <constraint firstItem="55j-iq-B8y" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="suq-KL-Bo4"/>
+                <constraint firstItem="55j-iq-B8y" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zc1-Co-gLw"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="137"/>

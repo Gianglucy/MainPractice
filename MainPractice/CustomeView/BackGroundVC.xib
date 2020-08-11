@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BackGroundVC" customModule="MainPractice" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundView" destination="jZM-Sv-ufF" id="gQz-RL-xM9"/>
                 <outlet property="modalView" destination="9e0-lC-aaL" id="jRs-2K-wxB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

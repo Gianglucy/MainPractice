@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Alamofire
 
 class MovieVC: UIViewController {
-
+    
     @IBOutlet weak var clvMovie: UICollectionView!
     var deviceWidth:CGFloat!
     var deviceHeight:CGFloat!
@@ -19,29 +20,68 @@ class MovieVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        requestData()
+        //        requestData()
+        requestAlamofire()
         setupUI()
     }
     
-    func requestData() {
-        var request = URLRequest(url: URL(string: ServerPath.API_URL.rawValue)!)
-        request.httpMethod = "GET"
-        
-        let task = URLSession.shared.dataTask(with: request){ data, response, error in
-            guard let data = data,
-                let _ = response as? HTTPURLResponse,
-                error == nil else {
-                    print("error111111111111",error ?? "ko xac dinh")
-                    return
+    //    func requestData() {
+    //        var request = URLRequest(url: URL(string: ServerPath.API_URL.rawValue)!)
+    //        request.httpMethod = "GET"
+    //
+    //        let task = URLSession.shared.dataTask(with: request){ data, response, error in
+    //            guard let data = data,
+    //                let _ = response as? HTTPURLResponse,
+    //                error == nil else {
+    //                    print("error111111111111",error ?? "ko xac dinh")
+    //                    return
+    //            }
+    //            let movieData = try? JSONDecoder().decode(DataMovie.self, from: data)
+    //            guard let result = movieData?.results else { return }
+    //            self.data = result
+    //            DispatchQueue.main.async {
+    //                self.clvMovie.reloadData()
+    //            }
+    //        }
+    //        task.resume()
+    //    }
+    
+    func requestAlamofire() {
+        AF.request(ServerPath.API_URL.rawValue, method: .get).validate().responseJSON{ response in
+//            if let error = response.error?.localizedDescription {
+//                let alert = UIAlertController(title: "ERROR", message: error, preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) in
+//                    self.dismiss(animated: true, completion: nil)
+//                }))
+//                self.present(alert, animated: true, completion: nil)
+//            }
+//            if let data = response.data {
+//                let movieData = try? JSONDecoder().decode(DataMovie.self, from: data)
+//                guard let result = movieData?.results else { return }
+//                self.data = result
+//                DispatchQueue.main.async {
+//                    self.clvMovie.reloadData()
+//                }
+//            }
+            
+            switch response.result {
+            case .success:
+                let movieData = try? JSONDecoder().decode(DataMovie.self, from: response.data!)
+                guard let result = movieData?.results else { return }
+                self.data = result
+                DispatchQueue.main.async {
+                    self.clvMovie.reloadData()
+                }
+            case let .failure(error):
+//                print(error)
+                let alert = UIAlertController(title: "ERROR", message: error.errorDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) in
+                    self.dismiss(animated: true, completion: nil)
+                }))
+                self.present(alert, animated: true, completion: nil)
             }
-            let movieData = try? JSONDecoder().decode(DataMovie.self, from: data)
-            guard let result = movieData?.results else { return }
-            self.data = result
-            DispatchQueue.main.async {
-                self.clvMovie.reloadData()
-            }
+            
         }
-        task.resume()
     }
     
     func setupUI() {

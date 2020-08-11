@@ -9,10 +9,16 @@
 import UIKit
 import Photos
 
+protocol BackGroundVCDelegate {
+    func passImage(image: UIImage)
+}
+
 class BackGroundVC: UIViewController, UINavigationControllerDelegate {
 
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var modalView: ModalView!
     var imageTemp: UIImage?
+    var delegate: BackGroundVCDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +42,23 @@ class BackGroundVC: UIViewController, UINavigationControllerDelegate {
             modalView.lblTitle.text = "Warn"
             modalView.lblContent.text = "Please Update Photo"
         }
+        
+        backgroundView.isUserInteractionEnabled = true
+        let touchOutSide = UITapGestureRecognizer(target: self, action: #selector(touchOutSideModal))
+        backgroundView.addGestureRecognizer(touchOutSide)
+    }
+    
+    @objc func touchOutSideModal(){
+        dismiss(animated: true)
     }
 }
 
 extension BackGroundVC: ModalViewDelegate {
+    //Done
     func handlePhoto() {
+        if let image = imageTemp {
+            delegate?.passImage(image: image)
+        }
         dismiss(animated: true)
     }
 }

@@ -12,6 +12,7 @@ import Photos
 class TestVC: UIViewController {
     
     @IBOutlet weak var btnShow: UIButton!
+    @IBOutlet weak var imvPhoto: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,19 @@ class TestVC: UIViewController {
     
     func setupUI() {
         btnShow.layer.cornerRadius = CGFloat(Constants.cornerRadius.rawValue)
+        imvPhoto.layer.cornerRadius = imvPhoto.frame.width / 2
+        imvPhoto.contentMode = .scaleAspectFill
+        imvPhoto.image = UIImage(named: "ic_avatar_red")
     }
     
     @IBAction func showSuccessView(_ sender: UIButton) {
         showImagePickerControllerActionSheet()
+    }
+}
+
+extension TestVC: BackGroundVCDelegate {
+    func passImage(image: UIImage) {
+        imvPhoto.image = image
     }
 }
 
@@ -87,6 +97,7 @@ extension TestVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
 extension TestVC: PhotoVCDelegate {
     func passingImage(image: UIImage) {
         let backGround = BackGroundVC(nibName: "BackGroundVC", bundle: nil)
+        backGround.delegate = self
         backGround.imageTemp = image
         let navController = UINavigationController(rootViewController: backGround)
         navController.modalPresentationStyle = .overCurrentContext

@@ -11,5 +11,5 @@ import Foundation
 enum ServerPath: String {
     case API_URL = "http://api.themoviedb.org/3/movie/upcoming?api_key=bbc473cc53a42cbc333fea4235662554"
     case IMAGE_URL = "https://image.tmdb.org/t/p/w500"
-    case LOCAL_HOST = "http://10.10.1.24:3000"
+    case LOCAL_HOST = "http://10.10.1.25:3000"
 }
