@@ -49,10 +49,30 @@
 		188FEE2224D3FB3400495D5C /* MovieTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE2024D3FB3400495D5C /* MovieTblCell.xib */; };
 		188FEE2524D414FA00495D5C /* MovieFifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FEE2324D414FA00495D5C /* MovieFifthVC.swift */; };
 		188FEE2624D414FA00495D5C /* MovieFifthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FEE2424D414FA00495D5C /* MovieFifthVC.xib */; };
+		18A28A0A24E38A2E00524E48 /* SignUpHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28A0824E38A2E00524E48 /* SignUpHeaderCell.swift */; };
+		18A28A0B24E38A2E00524E48 /* SignUpHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A28A0924E38A2E00524E48 /* SignUpHeaderCell.xib */; };
+		18A28A0D24E38C0300524E48 /* SignUpHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A28A0C24E38C0300524E48 /* SignUpHeaderView.xib */; };
+		18A28A0F24E38C3500524E48 /* SignUpHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28A0E24E38C3500524E48 /* SignUpHeaderView.swift */; };
+		18A28A1124E3955000524E48 /* SignUpFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A28A1024E3955000524E48 /* SignUpFooterView.xib */; };
+		18A28A1324E3955F00524E48 /* SignUpFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28A1224E3955F00524E48 /* SignUpFooterView.swift */; };
+		18A28A1724E396F700524E48 /* SignUpFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28A1524E396F700524E48 /* SignUpFooterCell.swift */; };
+		18A28A1824E396F700524E48 /* SignUpFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A28A1624E396F700524E48 /* SignUpFooterCell.xib */; };
+		18A28A1B24E3DC8600524E48 /* SignUpPassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A28A1A24E3DC8600524E48 /* SignUpPassView.xib */; };
+		18A28A1D24E3DCB600524E48 /* SignUpPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28A1C24E3DCB600524E48 /* SignUpPassView.swift */; };
+		18A28A2024E3DE8100524E48 /* SignUpPassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28A1E24E3DE8100524E48 /* SignUpPassCell.swift */; };
+		18A28A2124E3DE8100524E48 /* SignUpPassCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A28A1F24E3DE8100524E48 /* SignUpPassCell.xib */; };
+		18A28A2824E4D77400524E48 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28A2624E4D77400524E48 /* HelloViewController.swift */; };
+		18A28A2924E4D77400524E48 /* HelloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A28A2724E4D77400524E48 /* HelloViewController.xib */; };
+		18A28A2B24E5331000524E48 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28A2A24E5331000524E48 /* SignUp.swift */; };
 		18AE8EFA24E131F600EDD8FE /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE8EF824E131F600EDD8FE /* RegisterVC.swift */; };
 		18AE8EFB24E131F600EDD8FE /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE8EF924E131F600EDD8FE /* RegisterVC.xib */; };
 		18AE8EFF24E2351500EDD8FE /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE8EFD24E2351500EDD8FE /* SignUpVC.swift */; };
 		18AE8F0024E2351500EDD8FE /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE8EFE24E2351500EDD8FE /* SignUpVC.xib */; };
+		18AE8F0324E258CD00EDD8FE /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE8F0224E258CD00EDD8FE /* UIViewExtention.swift */; };
+		18AE8F0B24E2775700EDD8FE /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE8F0A24E2775700EDD8FE /* SignUpView.xib */; };
+		18AE8F0D24E2779800EDD8FE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE8F0C24E2779800EDD8FE /* SignUpView.swift */; };
+		18AE8F1024E2845500EDD8FE /* SignUpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE8F0E24E2845500EDD8FE /* SignUpCell.swift */; };
+		18AE8F1124E2845500EDD8FE /* SignUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AE8F0F24E2845500EDD8FE /* SignUpCell.xib */; };
 		18E6483624D7B4110043A6ED /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6483424D7B4110043A6ED /* NewsVC.swift */; };
 		18E6483724D7B4110043A6ED /* NewsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E6483524D7B4110043A6ED /* NewsVC.xib */; };
 		18E6483924D7B7D20043A6ED /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6483824D7B7D20043A6ED /* News.swift */; };
@@ -131,10 +151,30 @@
 		188FEE2024D3FB3400495D5C /* MovieTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTblCell.xib; sourceTree = "<group>"; };
 		188FEE2324D414FA00495D5C /* MovieFifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFifthVC.swift; sourceTree = "<group>"; };
 		188FEE2424D414FA00495D5C /* MovieFifthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieFifthVC.xib; sourceTree = "<group>"; };
+		18A28A0824E38A2E00524E48 /* SignUpHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpHeaderCell.swift; sourceTree = "<group>"; };
+		18A28A0924E38A2E00524E48 /* SignUpHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpHeaderCell.xib; sourceTree = "<group>"; };
+		18A28A0C24E38C0300524E48 /* SignUpHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpHeaderView.xib; sourceTree = "<group>"; };
+		18A28A0E24E38C3500524E48 /* SignUpHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpHeaderView.swift; sourceTree = "<group>"; };
+		18A28A1024E3955000524E48 /* SignUpFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFooterView.xib; sourceTree = "<group>"; };
+		18A28A1224E3955F00524E48 /* SignUpFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFooterView.swift; sourceTree = "<group>"; };
+		18A28A1524E396F700524E48 /* SignUpFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFooterCell.swift; sourceTree = "<group>"; };
+		18A28A1624E396F700524E48 /* SignUpFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFooterCell.xib; sourceTree = "<group>"; };
+		18A28A1A24E3DC8600524E48 /* SignUpPassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpPassView.xib; sourceTree = "<group>"; };
+		18A28A1C24E3DCB600524E48 /* SignUpPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPassView.swift; sourceTree = "<group>"; };
+		18A28A1E24E3DE8100524E48 /* SignUpPassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPassCell.swift; sourceTree = "<group>"; };
+		18A28A1F24E3DE8100524E48 /* SignUpPassCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpPassCell.xib; sourceTree = "<group>"; };
+		18A28A2624E4D77400524E48 /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		18A28A2724E4D77400524E48 /* HelloViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloViewController.xib; sourceTree = "<group>"; };
+		18A28A2A24E5331000524E48 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		18AE8EF824E131F600EDD8FE /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		18AE8EF924E131F600EDD8FE /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
 		18AE8EFD24E2351500EDD8FE /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		18AE8EFE24E2351500EDD8FE /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		18AE8F0224E258CD00EDD8FE /* UIViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		18AE8F0A24E2775700EDD8FE /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		18AE8F0C24E2779800EDD8FE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		18AE8F0E24E2845500EDD8FE /* SignUpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCell.swift; sourceTree = "<group>"; };
+		18AE8F0F24E2845500EDD8FE /* SignUpCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpCell.xib; sourceTree = "<group>"; };
 		18E6483424D7B4110043A6ED /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		18E6483524D7B4110043A6ED /* NewsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsVC.xib; sourceTree = "<group>"; };
 		18E6483824D7B7D20043A6ED /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
@@ -241,6 +281,7 @@
 		186A74C324BFE97A00982C54 /* MainPractice */ = {
 			isa = PBXGroup;
 			children = (
+				18AE8F0124E2589C00EDD8FE /* Extentions */,
 				18AE8EFC24E234B500EDD8FE /* SignUp */,
 				18AE8EF724E131BB00EDD8FE /* Register */,
 				181ACE1924DD3019007A4845 /* MovieCustomeCell */,
@@ -259,6 +300,8 @@
 				186A74ED24C1418500982C54 /* Model */,
 				186A74C424BFE97A00982C54 /* AppDelegate.swift */,
 				186A74C624BFE97A00982C54 /* SceneDelegate.swift */,
+				18A28A2624E4D77400524E48 /* HelloViewController.swift */,
+				18A28A2724E4D77400524E48 /* HelloViewController.xib */,
 				186A74CD24BFE97B00982C54 /* Assets.xcassets */,
 				186A74CF24BFE97B00982C54 /* LaunchScreen.storyboard */,
 				186A74D224BFE97B00982C54 /* Info.plist */,
@@ -273,6 +316,7 @@
 				18E6483824D7B7D20043A6ED /* News.swift */,
 				18FC309824C693D8001A9322 /* Task.swift */,
 				1810C44C24CE7FF200FA81C0 /* Movie.swift */,
+				18A28A2A24E5331000524E48 /* SignUp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +365,33 @@
 			path = TAB;
 			sourceTree = "<group>";
 		};
+		18A28A0724E389F500524E48 /* CellHeader */ = {
+			isa = PBXGroup;
+			children = (
+				18A28A0824E38A2E00524E48 /* SignUpHeaderCell.swift */,
+				18A28A0924E38A2E00524E48 /* SignUpHeaderCell.xib */,
+			);
+			path = CellHeader;
+			sourceTree = "<group>";
+		};
+		18A28A1424E3969600524E48 /* CellFooter */ = {
+			isa = PBXGroup;
+			children = (
+				18A28A1524E396F700524E48 /* SignUpFooterCell.swift */,
+				18A28A1624E396F700524E48 /* SignUpFooterCell.xib */,
+			);
+			path = CellFooter;
+			sourceTree = "<group>";
+		};
+		18A28A1924E3DBA400524E48 /* CellPassword */ = {
+			isa = PBXGroup;
+			children = (
+				18A28A1E24E3DE8100524E48 /* SignUpPassCell.swift */,
+				18A28A1F24E3DE8100524E48 /* SignUpPassCell.xib */,
+			);
+			path = CellPassword;
+			sourceTree = "<group>";
+		};
 		18AE8EF724E131BB00EDD8FE /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,10 +404,47 @@
 		18AE8EFC24E234B500EDD8FE /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				18A28A1924E3DBA400524E48 /* CellPassword */,
+				18A28A1424E3969600524E48 /* CellFooter */,
+				18A28A0724E389F500524E48 /* CellHeader */,
+				18AE8F0924E276DC00EDD8FE /* SignUpCustome */,
+				18AE8F0424E25A3900EDD8FE /* Cell */,
 				18AE8EFD24E2351500EDD8FE /* SignUpVC.swift */,
 				18AE8EFE24E2351500EDD8FE /* SignUpVC.xib */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		18AE8F0124E2589C00EDD8FE /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				18AE8F0224E258CD00EDD8FE /* UIViewExtention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		18AE8F0424E25A3900EDD8FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18AE8F0E24E2845500EDD8FE /* SignUpCell.swift */,
+				18AE8F0F24E2845500EDD8FE /* SignUpCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		18AE8F0924E276DC00EDD8FE /* SignUpCustome */ = {
+			isa = PBXGroup;
+			children = (
+				18AE8F0A24E2775700EDD8FE /* SignUpView.xib */,
+				18AE8F0C24E2779800EDD8FE /* SignUpView.swift */,
+				18A28A0C24E38C0300524E48 /* SignUpHeaderView.xib */,
+				18A28A0E24E38C3500524E48 /* SignUpHeaderView.swift */,
+				18A28A1024E3955000524E48 /* SignUpFooterView.xib */,
+				18A28A1224E3955F00524E48 /* SignUpFooterView.swift */,
+				18A28A1A24E3DC8600524E48 /* SignUpPassView.xib */,
+				18A28A1C24E3DCB600524E48 /* SignUpPassView.swift */,
+			);
+			path = SignUpCustome;
 			sourceTree = "<group>";
 		};
 		18E6483E24D7E8C30043A6ED /* News */ = {
@@ -562,28 +670,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				181ACE2724DD3C55007A4845 /* MovieTestCustomVC.xib in Resources */,
+				18AE8F1124E2845500EDD8FE /* SignUpCell.xib in Resources */,
 				18E6486C24DBEEED0043A6ED /* AlbumVC.xib in Resources */,
 				18AE8F0024E2351500EDD8FE /* SignUpVC.xib in Resources */,
 				186A74D124BFE97B00982C54 /* LaunchScreen.storyboard in Resources */,
+				18A28A1124E3955000524E48 /* SignUpFooterView.xib in Resources */,
+				18A28A1824E396F700524E48 /* SignUpFooterCell.xib in Resources */,
 				18EC04E724C47D9B00533529 /* ImageDetailVC.xib in Resources */,
+				18A28A0B24E38A2E00524E48 /* SignUpHeaderCell.xib in Resources */,
 				18AE8EFB24E131F600EDD8FE /* RegisterVC.xib in Resources */,
 				18E6486324DAB03D0043A6ED /* ModalView.xib in Resources */,
 				18E6485724DA91C10043A6ED /* TestVC.xib in Resources */,
 				188FEE1A24D3C95B00495D5C /* MovieThirdTwoCell.xib in Resources */,
 				188FEE1224D3B80300495D5C /* MovieThirdVC.xib in Resources */,
 				18E6487124DBEF560043A6ED /* AlbumCell.xib in Resources */,
+				18A28A2924E4D77400524E48 /* HelloViewController.xib in Resources */,
 				18E6483D24D7BEA90043A6ED /* NewsCell.xib in Resources */,
+				18A28A0D24E38C0300524E48 /* SignUpHeaderView.xib in Resources */,
 				18E6486724DABD870043A6ED /* BackGroundVC.xib in Resources */,
 				18FC309324C69170001A9322 /* ToDoListVC.xib in Resources */,
 				18FC30CD24CE7309001A9322 /* MovieVC.xib in Resources */,
 				18FC309724C6924C001A9322 /* ToDoListCell.xib in Resources */,
 				188FEE2624D414FA00495D5C /* MovieFifthVC.xib in Resources */,
+				18AE8F0B24E2775700EDD8FE /* SignUpView.xib in Resources */,
 				186A74E824BFF00300982C54 /* FirstVC.xib in Resources */,
 				1810C44B24CE7B6200FA81C0 /* MovieCell.xib in Resources */,
 				181ACE2F24DD40F2007A4845 /* MovieTestCustomCell.xib in Resources */,
 				18E6484924D90FBD0043A6ED /* HobbiesVC.xib in Resources */,
 				186A74CE24BFE97B00982C54 /* Assets.xcassets in Resources */,
 				188FEDF324D0061800495D5C /* MovieSecondCell.xib in Resources */,
+				18A28A2124E3DE8100524E48 /* SignUpPassCell.xib in Resources */,
 				18E6484424D7E95E0043A6ED /* NewsDetailVC.xib in Resources */,
 				186A74F324C1470000982C54 /* PhotoVC.xib in Resources */,
 				186A74EC24BFFD5F00982C54 /* UserInfoVC.xib in Resources */,
@@ -594,6 +710,7 @@
 				188FEE2224D3FB3400495D5C /* MovieTblCell.xib in Resources */,
 				188FEE0B24D2672000495D5C /* TabVC.xib in Resources */,
 				18E6483724D7B4110043A6ED /* NewsVC.xib in Resources */,
+				18A28A1B24E3DC8600524E48 /* SignUpPassView.xib in Resources */,
 				188FEE1624D3BA3B00495D5C /* MovieThirdOneCell.xib in Resources */,
 				188FEDEF24CFE02400495D5C /* MovieSecondVC.xib in Resources */,
 			);
@@ -649,19 +766,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E6485624DA91C10043A6ED /* TestVC.swift in Sources */,
+				18AE8F1024E2845500EDD8FE /* SignUpCell.swift in Sources */,
 				1810C44F24CE854200FA81C0 /* MovieCell.swift in Sources */,
 				188FEE1124D3B80300495D5C /* MovieThirdVC.swift in Sources */,
+				18A28A2024E3DE8100524E48 /* SignUpPassCell.swift in Sources */,
 				18E6484D24D912080043A6ED /* HobbiesCell.swift in Sources */,
+				18A28A0A24E38A2E00524E48 /* SignUpHeaderCell.swift in Sources */,
 				188FEE0E24D26CC100495D5C /* Constants.swift in Sources */,
 				1810C44D24CE7FF200FA81C0 /* Movie.swift in Sources */,
 				18E6486B24DBEEED0043A6ED /* AlbumVC.swift in Sources */,
 				188FEE1524D3BA3B00495D5C /* MovieThirdOneCell.swift in Sources */,
 				186A74F824C16BFC00982C54 /* PhotoCell.swift in Sources */,
 				188FEDEE24CFE02400495D5C /* MovieSecondVC.swift in Sources */,
+				18AE8F0324E258CD00EDD8FE /* UIViewExtention.swift in Sources */,
 				18E6483624D7B4110043A6ED /* NewsVC.swift in Sources */,
+				18A28A1D24E3DCB600524E48 /* SignUpPassView.swift in Sources */,
 				18AE8EFA24E131F600EDD8FE /* RegisterVC.swift in Sources */,
 				188FEE1924D3C95B00495D5C /* MovieThirdTwoCell.swift in Sources */,
 				186A74E724BFF00300982C54 /* FirstVC.swift in Sources */,
+				18AE8F0D24E2779800EDD8FE /* SignUpView.swift in Sources */,
 				18E6483C24D7BEA90043A6ED /* NewsCell.swift in Sources */,
 				186A74EF24C141A800982C54 /* User.swift in Sources */,
 				18E6486624DABD870043A6ED /* BackGroundVC.swift in Sources */,
@@ -669,6 +792,7 @@
 				181ACE3324DD4D93007A4845 /* MovieCustomCell.swift in Sources */,
 				18FC309624C6924C001A9322 /* ToDoListCell.swift in Sources */,
 				18FC309924C693D8001A9322 /* Task.swift in Sources */,
+				18A28A0F24E38C3500524E48 /* SignUpHeaderView.swift in Sources */,
 				188FEE0A24D2672000495D5C /* TabVC.swift in Sources */,
 				181ACE2624DD3C55007A4845 /* MovieTestCustomVC.swift in Sources */,
 				188FEE2524D414FA00495D5C /* MovieFifthVC.swift in Sources */,
@@ -678,15 +802,19 @@
 				1810C45224CE91FF00FA81C0 /* ServerPath.swift in Sources */,
 				18EC04E624C47D9A00533529 /* ImageDetailVC.swift in Sources */,
 				18FC309224C69170001A9322 /* ToDoListVC.swift in Sources */,
+				18A28A2B24E5331000524E48 /* SignUp.swift in Sources */,
 				181ACE2E24DD40F2007A4845 /* MovieTestCustomCell.swift in Sources */,
 				188FEDF224D0061800495D5C /* MovieSecondCell.swift in Sources */,
 				18E6483924D7B7D20043A6ED /* News.swift in Sources */,
+				18A28A1724E396F700524E48 /* SignUpFooterCell.swift in Sources */,
 				18FC30CC24CE7309001A9322 /* MovieVC.swift in Sources */,
 				186A74EB24BFFD5F00982C54 /* UserInfoVC.swift in Sources */,
 				186A74F224C1470000982C54 /* PhotoVC.swift in Sources */,
 				18AE8EFF24E2351500EDD8FE /* SignUpVC.swift in Sources */,
 				188FEE1D24D3F87D00495D5C /* MovieFourthVC.swift in Sources */,
 				188FEE2124D3FB3400495D5C /* MovieTblCell.swift in Sources */,
+				18A28A1324E3955F00524E48 /* SignUpFooterView.swift in Sources */,
+				18A28A2824E4D77400524E48 /* HelloViewController.swift in Sources */,
 				18E6484824D90FBD0043A6ED /* HobbiesVC.swift in Sources */,
 				18E6487024DBEF560043A6ED /* AlbumCell.swift in Sources */,
 			);

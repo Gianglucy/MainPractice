@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="MainPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="tblSignUp" destination="E7G-Sw-1aK" id="Y2H-kc-Qzg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBackground" destination="Ang-DW-Oze" id="hIR-hx-qIp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ang-DW-Oze">
+                    <rect key="frame" x="0.0" y="244" width="414" height="618"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E7G-Sw-1aK">
+                            <rect key="frame" x="30" y="0.0" width="354" height="618"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="E7G-Sw-1aK" firstAttribute="leading" secondItem="Ang-DW-Oze" secondAttribute="leading" constant="30" id="JqT-o3-vaB"/>
+                        <constraint firstItem="E7G-Sw-1aK" firstAttribute="top" secondItem="Ang-DW-Oze" secondAttribute="top" id="bcM-92-8IS"/>
+                        <constraint firstAttribute="bottom" secondItem="E7G-Sw-1aK" secondAttribute="bottom" id="fZO-mF-djA"/>
+                        <constraint firstAttribute="trailing" secondItem="E7G-Sw-1aK" secondAttribute="trailing" constant="30" id="ge1-2z-c2q"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a new account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzB-8n-yYr">
+                    <rect key="frame" x="16" y="194" width="382" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ang-DW-Oze" secondAttribute="bottom" id="1WR-Zg-yji"/>
+                <constraint firstItem="Ang-DW-Oze" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IE6-Ic-Q2S"/>
+                <constraint firstItem="Ang-DW-Oze" firstAttribute="top" secondItem="pzB-8n-yYr" secondAttribute="bottom" constant="20" id="Opi-Mp-E50"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pzB-8n-yYr" secondAttribute="trailing" constant="16" id="cZq-d8-eci"/>
+                <constraint firstItem="pzB-8n-yYr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hG0-xi-NcY"/>
+                <constraint firstItem="pzB-8n-yYr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="hha-0R-xEF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ang-DW-Oze" secondAttribute="trailing" id="qAm-gR-iH5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </view>
+    </objects>
+</document>

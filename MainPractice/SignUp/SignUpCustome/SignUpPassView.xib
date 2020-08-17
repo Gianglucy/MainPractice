@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpPassView" customModule="MainPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="btnHidePass" destination="PCt-TH-SyK" id="0pC-bC-i1L"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="eUv-WZ-4rl"/>
+                <outlet property="txfSignUp" destination="WQD-ZD-oxW" id="JEB-Ad-5Lt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="274"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WQD-ZD-oxW">
+                    <rect key="frame" x="0.0" y="0.0" width="338.33333333333331" height="273"/>
+                    <nil key="textColor"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oX2-x4-uw9">
+                    <rect key="frame" x="0.0" y="273" width="423" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="47g-yA-tZl"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="TOG-nz-yx9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0T-q9-WBC">
+                    <rect key="frame" x="338.33333333333331" y="0.0" width="84.666666666666686" height="273"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCt-TH-SyK">
+                            <rect key="frame" x="0.0" y="121.66666666666669" width="84.666666666666671" height="30"/>
+                            <connections>
+                                <action selector="hidenPass:" destination="-1" eventType="touchUpInside" id="Mcx-nY-BZR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="PCt-TH-SyK" firstAttribute="leading" secondItem="c0T-q9-WBC" secondAttribute="leading" id="ZBe-ng-IZ2"/>
+                        <constraint firstAttribute="trailing" secondItem="PCt-TH-SyK" secondAttribute="trailing" id="jLe-Wx-Vs4"/>
+                        <constraint firstItem="PCt-TH-SyK" firstAttribute="centerY" secondItem="c0T-q9-WBC" secondAttribute="centerY" id="m3E-DH-aYv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="oX2-x4-uw9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1j7-HZ-oqS"/>
+                <constraint firstItem="oX2-x4-uw9" firstAttribute="top" secondItem="WQD-ZD-oxW" secondAttribute="bottom" id="961-9F-gLt"/>
+                <constraint firstItem="c0T-q9-WBC" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="DBy-EC-bgH"/>
+                <constraint firstItem="WQD-ZD-oxW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QU4-1d-Q5d"/>
+                <constraint firstItem="oX2-x4-uw9" firstAttribute="top" secondItem="c0T-q9-WBC" secondAttribute="bottom" id="RGV-KQ-SeK"/>
+                <constraint firstAttribute="trailing" secondItem="oX2-x4-uw9" secondAttribute="trailing" id="Vyq-lL-xTB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="oX2-x4-uw9" secondAttribute="bottom" id="a2I-Y7-vfY"/>
+                <constraint firstItem="c0T-q9-WBC" firstAttribute="leading" secondItem="WQD-ZD-oxW" secondAttribute="trailing" id="bba-6y-t8k"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c0T-q9-WBC" secondAttribute="trailing" id="cHh-Dv-yws"/>
+                <constraint firstItem="WQD-ZD-oxW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hJH-g4-8eQ"/>
+                <constraint firstItem="c0T-q9-WBC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rKA-BV-e1N"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-82" y="-125"/>
+        </view>
+    </objects>
+</document>
