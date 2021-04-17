@@ -48,9 +48,9 @@ class NewsCell: UITableViewCell {
         }
         
         func configCell(news: News) {
-            if let data: News = news {
-                dataNews = data
-            }
+//            if let data: News = news {
+//                dataNews = data
+//            }
             lblTitle.text = news.title ?? "No title"
             lblContent.text = news.content ?? "No decription"
             let queue = DispatchQueue(label: "loadImage",qos: .background)

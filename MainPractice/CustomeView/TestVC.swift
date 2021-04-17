@@ -17,6 +17,8 @@ class TestVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+//        let modelName = UIDevice.modelName
+//        print("======>> \(modelName)")
     }
     
     func setupUI() {
@@ -28,6 +30,7 @@ class TestVC: UIViewController {
     
     @IBAction func showSuccessView(_ sender: UIButton) {
         showImagePickerControllerActionSheet()
+//        fatalError()
     }
 }
 
@@ -105,3 +108,5 @@ extension TestVC: PhotoVCDelegate {
         self.present(navController, animated: true, completion: nil)
     }
 }
+
+

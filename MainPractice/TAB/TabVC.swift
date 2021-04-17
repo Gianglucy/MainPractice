@@ -14,8 +14,8 @@ class TabVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let movieVC = MovieVC(nibName: "MovieVC", bundle: nil)
-//        let movieSecondVC = MovieSecondVC(nibName: "MovieSecondVC", bundle: nil)
+        let movieVC = MovieVC(nibName: "MovieVC", bundle: nil)
+        let movieSecondVC = MovieSecondVC(nibName: "MovieSecondVC", bundle: nil)
 //        let movieThirdVC = MovieThirdVC(nibName: "MovieThirdVC", bundle: nil)
         let movieFourthVC = MovieFourthVC(nibName: "MovieFourthVC", bundle: nil)
         let movieFifthVC = MovieFifthVC(nibName: "MovieFifthVC", bundle: nil)
@@ -31,9 +31,9 @@ class TabVC: UITabBarController {
         let helloVC = HelloViewController(nibName: "HelloViewController", bundle: nil)
         
         //movieCustomCellVC
-        let movieNav = UINavigationController(rootViewController: signUpVC)
-        let movieSecondNav = UINavigationController(rootViewController: testVC)
-        let movieThirdNav = UINavigationController(rootViewController: registerVC)
+        let movieNav = UINavigationController(rootViewController: testVC)
+        let movieSecondNav = UINavigationController(rootViewController: movieSecondVC)
+        let movieThirdNav = UINavigationController(rootViewController: signUpVC)
         let movieFourthNav = UINavigationController(rootViewController: movieFourthVC)
         let movieFifthNav = UINavigationController(rootViewController: movieFifthVC)
         let newsNav = UINavigationController(rootViewController: newsVC)

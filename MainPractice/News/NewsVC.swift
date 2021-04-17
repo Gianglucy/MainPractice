@@ -61,7 +61,6 @@ extension NewsVC: UITableViewDelegate, UITableViewDataSource {
         cell.configCell(news: data[indexPath.row])
         cell.delegate = self
         cell.closure = {
-            
             if let id = data[indexPath.row].id {
                 self.passID?(id)
             }

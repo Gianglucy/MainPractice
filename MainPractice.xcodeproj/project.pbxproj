@@ -17,6 +17,7 @@
 		181ACE2F24DD40F2007A4845 /* MovieTestCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181ACE2D24DD40F2007A4845 /* MovieTestCustomCell.xib */; };
 		181ACE3124DD4C03007A4845 /* MovieCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181ACE3024DD4C03007A4845 /* MovieCustomCell.xib */; };
 		181ACE3324DD4D93007A4845 /* MovieCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181ACE3224DD4D93007A4845 /* MovieCustomCell.swift */; };
+		18669B13250F50080004C5E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18669B12250F50080004C5E3 /* GoogleService-Info.plist */; };
 		186A74C524BFE97A00982C54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A74C424BFE97A00982C54 /* AppDelegate.swift */; };
 		186A74C724BFE97A00982C54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A74C624BFE97A00982C54 /* SceneDelegate.swift */; };
 		186A74CE24BFE97B00982C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186A74CD24BFE97B00982C54 /* Assets.xcassets */; };
@@ -103,7 +104,6 @@
 		18FC309924C693D8001A9322 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC309824C693D8001A9322 /* Task.swift */; };
 		18FC30CC24CE7309001A9322 /* MovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC30CA24CE7309001A9322 /* MovieVC.swift */; };
 		18FC30CD24CE7309001A9322 /* MovieVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FC30CB24CE7309001A9322 /* MovieVC.xib */; };
-		BE997981BD3FFD12F3927D91 /* Pods_MainPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2622BC1E8B70DEE0A8D6F27B /* Pods_MainPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +117,7 @@
 		181ACE2D24DD40F2007A4845 /* MovieTestCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTestCustomCell.xib; sourceTree = "<group>"; };
 		181ACE3024DD4C03007A4845 /* MovieCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCustomCell.xib; sourceTree = "<group>"; };
 		181ACE3224DD4D93007A4845 /* MovieCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCustomCell.swift; sourceTree = "<group>"; };
+		18669B12250F50080004C5E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		186A74C124BFE97A00982C54 /* MainPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186A74C424BFE97A00982C54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		186A74C624BFE97A00982C54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,7 +216,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE997981BD3FFD12F3927D91 /* Pods_MainPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +305,7 @@
 				186A74CD24BFE97B00982C54 /* Assets.xcassets */,
 				186A74CF24BFE97B00982C54 /* LaunchScreen.storyboard */,
 				186A74D224BFE97B00982C54 /* Info.plist */,
+				18669B12250F50080004C5E3 /* GoogleService-Info.plist */,
 			);
 			path = MainPractice;
 			sourceTree = "<group>";
@@ -621,6 +622,7 @@
 				186A74BE24BFE97A00982C54 /* Frameworks */,
 				186A74BF24BFE97A00982C54 /* Resources */,
 				7068EED78811A4108EE9BBCD /* [CP] Embed Pods Frameworks */,
+				18669B14250F51A00004C5E3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -671,6 +673,7 @@
 			files = (
 				181ACE2724DD3C55007A4845 /* MovieTestCustomVC.xib in Resources */,
 				18AE8F1124E2845500EDD8FE /* SignUpCell.xib in Resources */,
+				18669B13250F50080004C5E3 /* GoogleService-Info.plist in Resources */,
 				18E6486C24DBEEED0043A6ED /* AlbumVC.xib in Resources */,
 				18AE8F0024E2351500EDD8FE /* SignUpVC.xib in Resources */,
 				186A74D124BFE97B00982C54 /* LaunchScreen.storyboard in Resources */,
@@ -719,6 +722,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18669B14250F51A00004C5E3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		574D83A08547787D33B28C96 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -927,9 +948,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -954,6 +976,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 5KKMTY5A4D;
 				INFOPLIST_FILE = MainPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -973,6 +996,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 5KKMTY5A4D;
 				INFOPLIST_FILE = MainPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

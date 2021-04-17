@@ -7,4 +7,6 @@ target 'MainPractice' do
 
   # Pods for MainPractice
   pod 'Alamofire'
+  pod 'Firebase/Core'
+  pod 'Firebase/Crashlytics'
 end
